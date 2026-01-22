@@ -327,6 +327,8 @@ export default async function BlogPostPage({
 
     return (
         <main className="min-h-screen bg-white py-12  mt-30 px-4 sm:px-6 lg:px-8">
+
+            <img src="https://images.unsplash.com/photo-1509909756405-be0199881695?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Background" className="w-full h-[60vh] object-cover max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-9" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-3 gap-8">
                     {/* Main Content */}
@@ -334,22 +336,7 @@ export default async function BlogPostPage({
                         {/* Header */}
                         <div className="mb-8 space-y-4">
                             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
-                                <div className="flex items-center gap-2">
-                                    <svg
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        />
-                                    </svg>
-                                    <span>{post.date}</span>
-                                </div>
+
                                 <div className="flex items-center gap-2">
                                     <svg
                                         className="w-4 h-4"
