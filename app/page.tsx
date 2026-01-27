@@ -29,7 +29,9 @@ export default function Home() {
 
               </h1>
               <p className="text-md max-w-[80%]    text-white mb-8">
-                Psikolojik destek ihtiyacınız olduğunda, size en iyi şekilde yardımcı olabilmek için online ve yüz yüze danışmanlık hizmeti sunuyorum. Türkiye ve yurt dışında, özellikle Almanya'da, çeşitli danışmanlık ihtiyaçlarınız için yanınızdayım.
+                Psikolojik danışmanlık hizmetleri, bireyin kendini daha iyi tanımasına; duygusal ve zihinsel farkındalığını geliştirmesine ve yaşam kalitesini artırmasına yönelik profesyonel bir destek sürecidir.
+                Kendini daha yakından tanımak, kişisel gelişimini desteklemek ve yaşam kalitesini artırmak isteyen herkes psikolojik danışmanlık hizmetlerinden yararlanabilir.
+
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -53,18 +55,15 @@ export default function Home() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="bg-white  p-8 shadow-lg  py-16 text-left">
                 <h2 className="text-xl font-bold font-serif-rewrite pb-10 text-primary-text mb-6">Hakkımda</h2>
-                <p className=" text-gray-700 mb-5 text-2xl font-bold font-serif-rewrite mb-2">Bizi daha yakından tanıyın</p>
-                <p className="text-gray-600  mb-4 ">
-                  Ben <strong className="text-primary-text">Nisanur Azer</strong>, psikolojik danışman/bilişsel davranışçı terapistim. Marmara Üniversitesi Psikolojik Danışmanlık ve Rehberlik bölümünden onur derecesiyle mezun olduktan sonra Bilişsel Davranışçı Terapi alanında ileri düzey eğitimimi tamamladım.
-                </p>
+                <p className=" text-gray-700 mb-5 text-2xl font-bold font-serif-rewrite mb-2">Danışmanımızı Yakından Tanıyın </p>
+                <p className="text-gray-600  mb-4">Ben Nisanur Azer Psikolojik danışman ve bilişsel davranışçı terapist olarak çalışmaktayım. <br /></p>
+                <p className="text-gray-600  mb-4">Marmara Üniversitesi Psikolojik Danışmanlık ve Rehberlik Bölümü’nden onur derecesiyle mezun olduktan sonra, Bilişsel Davranışçı Terapi alanında ileri düzey eğitimlerimi tamamladım. Mesleki gelişimimi desteklemek amacıyla yurt içinde ve yurt dışında birçok eğitim, seminer ve süpervizyon programına katıldım. <br /></p>
+                <p className="text-gray-600  mb-4">Nobel Yayın Evi tarafından yayımlanan “Gençlerden Gençlere Yardım Rehberi” adlı kitapta Kaygı bölümünün yazarı olarak yer aldım. Akademik bilgi ile klinik uygulamayı bir araya getirmeyi önemseyen bir yaklaşımla çalışmalarımı sürdürmekteyim. <br /></p>
+                <p className="text-gray-600  mb-4">Mesleki gelişim sürecimde İtalya, Hollanda ve Almanya başta olmak üzere birçok Avrupa ülkesinde çeşitli eğitimler ve seminerlere katıldım; ayrıca İtalya’da mesleki staj yaparak uluslararası uygulamaları yakından deneyimleme fırsatı buldum. <br /></p>
+                <p className="text-gray-600  mb-4">2021 yılından bu yana bireysel psikolojik danışmanlık ve kariyer danışmanlığı hizmetleri sunmakta; bunun yanı sıra ailelere ve ebeveynlere yönelik psiko-eğitim programları düzenlemeye devam etmekteyim. <br /></p>
+                <p className="text-gray-600  mb-4">Kariyerim boyunca; anksiyete, depresyon, travma sonrası stres bozukluğu (TSSB), ilişki problemleri, öfke yönetimi ve stres yönetimi gibi alanlarda destek arayan danışanlarla çalıştım. Terapideki temel amacım; danışanlarımın düşünce kalıplarını, duygusal ve davranışsal tepkilerini daha iyi fark etmelerine yardımcı olmak ve bu farkındalık doğrultusunda sağlıklı, kalıcı ve işlevsel değişim süreçlerine rehberlik etmektir. <br /></p>
+                Çalışmalarımda bilimsel temelli, etik ilkelere bağlı ve danışan odaklı bir yaklaşımı esas almaktayım.
 
-
-                <p className="text-gray-600  mb-4">
-                  2021 yılından beri psikolojik danışmanlık, kariyer danışmanlığı vermekte ve aile, ebeveyn psiko-eğitimleri vermeyi sürdürmekteyim. Kariyerim boyunca, anksiyete, depresyon, travma sonrası stres bozukluğu (TSSB), ilişki problemleri, öfke yönetimi, stres yönetimi ve benzeri duygusal zorluklarla başa çıkmak isteyen danışanlarla çalıştım.
-                </p>
-                <p className="text-gray-600 ">
-                  Terapideki temel amacım, danışanlarımın düşünce kalıplarını, duygusal ve davranışsal tepkilerini daha iyi anlamalarına yardımcı olmak ve sağlıklı değişim süreçlerine rehberlik etmektir.
-                </p>
                 <div className="flex flex-col sm:flex-row mt-10 gap-4">
                   <a
                     href="#randevu"
@@ -92,7 +91,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 mb-16">
             <div className="max-w-3xl">
               <p className="text-[18px] font-semibold tracking-wide text-primary uppercase">
-                Çalışma Alanlarımız
+                Hizmet Alanlarım
               </p>
               <h2 className="text-4xl sm:text-5xl font-serif-rewrite font-bold text-primary-text leading-tight ">
                 Destek verdiğimiz
@@ -108,18 +107,14 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border border-[#e6e9ef] rounded-xl overflow-hidden shadow-[0_10px_35px_rgba(0,0,0,0.04)]">
             {[
-              { title: "Bireysel (Yetişkin) Terapisi" },
-              { title: "Ergen Terapisi" },
-              { title: "Çocuk Terapisi" },
-              { title: "Çift ve Evlilik Terapisi" },
-              { title: "Online Danışmanlık" },
-              { title: "Almanya'da Yüz Yüze Danışmanlık" },
+              { title: "Kişisel Gelişim" },
+              { title: "Stres Yönetimi" },
+              { title: "Kaygı Bozuklukları" },
               { title: "İlişki Problemleri" },
-              { title: "Aile / Ebeveyn Danışmanlığı" },
+              { title: "Depresyon" },
+              { title: "Özsaygı ve Özgüven Geliştirme" },
+              { title: "Ebeveyn / Aile Danışmanlığı" },
               { title: "Travma Sonrası İyileşme" },
-              { title: "Psikoeğitim", href: "/psikoegitim" },
-              { title: "Oyun Terapisi", href: "/oyun-terapisi" },
-              { title: "Bilişsel Davranışçı Terapi (BDT)", href: "/bdt" },
             ].map(({ title, href }) => {
               const card = (
                 <div className="flex h-full flex-col justify-between border-r border-b border-[#e6e9ef] bg-white px-6 py-10 transition duration-200 group-hover:bg-secondary/5 ">
@@ -141,6 +136,9 @@ export default function Home() {
               );
             })}
           </div>
+
+          <p className="text-gray-600  mt-5   max-w-4xl  " >Her bir danışanım için özelleştirilmiş yaklaşımlar uygulayarak, daha sağlıklı bir yaşam sürmeniz için gerekli psikolojik destek ve rehberliği sağlamaktayım.
+          </p>
         </div>
       </section>
 

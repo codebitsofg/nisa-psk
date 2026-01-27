@@ -5,10 +5,10 @@ const Navigation = () => {
     return (
         <nav className="fixed top-0 w-full bg-white  border-b border-gray-100 z-50 ">
             <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-22">
+                <div className="flex justify-between items-center ">
                     <div className="flex h-full items-center gap-4">
                         <Link href="/" className="text-lg font-bold text-primary-text hover:text-accent transition-colors font-serif-rewrite">
-                            NA Psikolojik Danışmanlık <br /> ve Eğitim
+                            <img src="/logo.png" alt="NA Psikolojik Danışmanlık ve Eğitim" className=' w-40 h-auto' />
                         </Link>
                         {/* <div className=" h-full rotate-40 w-0.5 bg-primary"></div> */}
                     </div>
