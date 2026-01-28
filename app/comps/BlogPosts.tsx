@@ -5,23 +5,50 @@ const posts = [
         title: "Psikolojik Danışma Nedir?",
         image:
             "https://images.unsplash.com/photo-1616740793717-0aca29b92221?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        href: "/blog/psikolojik-danisma",
+        href: "/blog/psikolojik-danisma-nedir",
     },
     {
-        title: "Psikoeğitim ve Yararları",
+        title: "Psikolojik Danışmanın Yararları Nelerdir?",
         image:
-            "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        href: "/blog/psikoegitim",
+            "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/psikolojik-danismanin-yararlari",
     },
     {
-        title: "Bilişsel Davranışçı Terapi (BDT)",
+        title: "Psikolojik Danışma Kimlere Yöneliktir?",
         image:
-            "https://images.unsplash.com/photo-1461468611824-46457c0e11fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        href: "/blog/bdt",
+            "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/psikolojik-danisma-kimlere-yoneliktir",
     },
-
-
-
+    {
+        title: "Psikoeğitim Nedir?",
+        image:
+            "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/psikoegitim-nedir",
+    },
+    {
+        title: "Psikoeğitim Hangi Yaş Grupları için Uygundur?",
+        image:
+            "https://images.unsplash.com/photo-1450883874496-0e8ba9efer93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/psikoegitim-yas-gruplari",
+    },
+    {
+        title: "Bilişsel Davranışçı Terapi (BDT) Nedir?",
+        image:
+            "https://images.unsplash.com/photo-1461468611824-46457c0e11fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/bdt-nedir",
+    },
+    {
+        title: "BDT Terapide Nasıl Kullanılır?",
+        image:
+            "https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/bdt-terapide-nasil-kullanilir",
+    },
+    {
+        title: "Kariyer Danışmanlığı Nedir?",
+        image:
+            "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/kariyer-danismanligi-nedir",
+    },
 ];
 
 
