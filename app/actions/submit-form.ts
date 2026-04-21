@@ -3,8 +3,8 @@
 import { Resend } from "resend";
 
 export async function submitAppointmentForm(formData: any) {
-  const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
-  const TARGET_EMAIL = process.env.TARGET_EMAIL || "psk.nisanurazer@gmail.com";
+  const RESEND_API_KEY = "re_3Z3NxxNH_BaUyhZRGymK21tYFAp85Rm39"
+  const TARGET_EMAIL = "psk.nisanurazer@gmail.com";
 
   const resend = new Resend(RESEND_API_KEY);
 
@@ -46,9 +46,9 @@ export async function submitAppointmentForm(formData: any) {
   if (resendSuccess) {
     return { success: true };
   } else {
-    return { 
-      success: false, 
-      error: "Sistem şu anda talebinizi alamadı. Lütfen direkt telefon veya mail ile ulaşın." 
+    return {
+      success: false,
+      error: "Sistem şu anda talebinizi alamadı. Lütfen direkt telefon veya mail ile ulaşın."
     };
   }
 }
