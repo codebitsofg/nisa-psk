@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "react-day-picker/dist/style.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -9,9 +10,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-figtree: var(--font-figtree);
-  --color-primary: #438983;
-  --color-secondary: #5baea7;
-  --color-accent: #2f605c;
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --color-primary-text: #3c3a44;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -68,18 +69,18 @@ body {
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.57 0.07 190.5);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.68 0.08 190.5);
+  --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent: oklch(0.421 0.057 191.07);
+  --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --ring: oklch(0.57 0.07 190.5);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -136,4 +137,45 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Calendar Overrides to ensure brand colors for react-day-picker v9 */
+.rdp-root {
+  --rdp-accent-color: var(--primary) !important;
+  --rdp-accent-background-color: var(--primary) !important;
+  --rdp-day_button-border-radius: 100%;
+  --rdp-selected-color: var(--primary-foreground) !important;
+}
+
+/* Ensure the cell container is transparent */
+.rdp-day[data-selected="true"] {
+  background-color: transparent !important;
+}
+
+/* Ensure the circular button has the teal background and white text */
+.rdp-day_button[aria-selected="true"] {
+  background-color: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+  border-radius: 100% !important;
+  opacity: 1 !important;
+}
+
+/* Additional state fixes */
+.rdp-day_button[aria-selected="true"]:hover {
+  background-color: var(--primary) !important;
+  opacity: 0.9 !important;
+}
+
+.rdp-day_today {
+  color: var(--primary) !important;
+  font-weight: bold;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring) !important;
+  outline-offset: 2px;
+}
+
+.rdp-button_next, .rdp-button_previous {
+  color: var(--primary) !important;
 }
