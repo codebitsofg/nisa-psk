@@ -6,10 +6,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="grid  md:grid-cols-3   gap-12 mb-12">
                     <div className="text-left">
-                        <h3 className="text-2xl font-bold font-serif-rewrite text-primary-text mb-4">NA Psikolojik Danışmanlık <br /> ve Eğitim</h3>
-                        <p className="text-primary-text/70 leading-relaxed">
-                            Online ve Yüz Yüze Psikolojik Danışmanlık Hizmetleri
-                        </p>
+                        <img src="/logo.png" alt="NA Psikolojik Danışmanlık ve Eğitim" className=' w-40 h-auto' />
                     </div>
                     <div className="text-left">
                         <h4 className="text-lg font-semibold text-primary-text mb-4">İletişim</h4>

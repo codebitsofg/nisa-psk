@@ -1,22 +1,31 @@
+"use client";
+
 import Link from "next/link";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const posts = [
     {
         title: "Psikolojik Danışma Nedir?",
         image:
-            "https://images.unsplash.com/photo-1616740793717-0aca29b92221?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1568140398908-9bd642df4724?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         href: "/blog/psikolojik-danisma-nedir",
     },
     {
         title: "Psikolojik Danışmanın Yararları Nelerdir?",
         image:
-            "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+            "https://images.unsplash.com/photo-1494797262163-102fae527c62?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         href: "/blog/psikolojik-danismanin-yararlari",
     },
     {
         title: "Psikolojik Danışma Kimlere Yöneliktir?",
         image:
-            "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+            "https://images.unsplash.com/photo-1660912354396-c28325d51aa4?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         href: "/blog/psikolojik-danisma-kimlere-yoneliktir",
     },
     {
@@ -28,7 +37,7 @@ const posts = [
     {
         title: "Psikoeğitim Hangi Yaş Grupları için Uygundur?",
         image:
-            "https://images.unsplash.com/photo-1450883874496-0e8ba9efer93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+            "https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
         href: "/blog/psikoegitim-yas-gruplari",
     },
     {
@@ -40,7 +49,7 @@ const posts = [
     {
         title: "BDT Terapide Nasıl Kullanılır?",
         image:
-            "https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+            "https://images.unsplash.com/photo-1609122881521-8a7ea5c570c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         href: "/blog/bdt-terapide-nasil-kullanilir",
     },
     {
@@ -58,33 +67,45 @@ const BlogPosts = () => {
     return (
         <section id="blog" className="py-18 px-4 sm:px-6 lg:px-8 ">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-5xl text-center font-serif font-bold text-primary-text mb-12">
+                <h2 className="text-5xl text-center font-serif font-bold text-primary-text ">
                     Blog
                 </h2>
-
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {posts.map((post) => (
-                        <Link
-                            key={post.title}
-                            href={post.href}
-                            className="bg-white  overflow-hidden shadow-[0_12px_35px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition duration-200 block"
-                        >
-                            <div className="aspect-4/3 w-full overflow-hidden">
-                                <img
-                                    src={post.image}
-                                    alt={post.title}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div className="p-6">
-                                <h3 className="text-2xl font-bold text-center font-serif text-primary-text leading-snug">
-                                    {post.title}
-                                </h3>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
+                <Carousel
+                    opts={{
+                        align: "start",
+                        loop: true,
+                    }}
+                    className="w-full p-14"
+                >
+                    <CarouselContent className="-ml-4 items-stretch">
+                        {posts.map((post) => (
+                            <CarouselItem
+                                key={post.title}
+                                className="pl-4 md:basis-1/2 lg:basis-1/3 h-full"
+                            >
+                                <Link
+                                    href={post.href}
+                                    className="flex h-full flex-col bg-white overflow-hidden  hover:-translate-y-1 transition duration-200"
+                                >
+                                    <div className="aspect-4/3 w-full overflow-hidden">
+                                        <img
+                                            src={post.image}
+                                            alt={post.title}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    <div className="p-6 mt-auto min-h-[110px] flex items-center justify-center">
+                                        <h3 className="text-2xl font-bold text-center font-serif text-primary-text leading-snug">
+                                            {post.title}
+                                        </h3>
+                                    </div>
+                                </Link>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    <CarouselPrevious className=" hover:bg-primary-text hover:text-white cursor-pointer h-14 w-14" />
+                    <CarouselNext className=" hover:bg-primary-text hover:text-white cursor-pointer h-14 w-14  " />
+                </Carousel>
             </div>
         </section>
     );

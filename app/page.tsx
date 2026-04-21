@@ -20,15 +20,16 @@ export default function Home() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="pt-60 pb-20    mx-auto  bg-gradient-to-b  from-accent via-secondary to-white min-h-[800px] flex items-center">
+      <section className=" pb-20    mx-auto     flex items-center">
         <div className=" mx-auto w-full">
-          <div className="grid lg:grid-cols-2  px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto gap-12 items-center">
-            <div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif-rewrite text-white mb-6 ">
+          <div className=" relative flex items-end justify-end bg-[url('https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] min-h-[100vh] bg-cover bg-center bg-no-repeat  mx-auto gap-12 items-center">
+            <div className=" relative z-10   mx-auto  p-10 px-4 sm:px-6 lg:px-8  flex items-center justify-end flex-col rounded-3xl">
+              {/* <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-serif-rewrite text-white mb-6 ">
                 NA Psikolojik Danışmanlık ve Eğitim
 
-              </h1>
-              <p className="text-md max-w-[80%]    text-white mb-8">
+              </h1> */}
+              <img src="/logo.png" alt="NA Psikolojik Danışmanlık ve Eğitim" className=' bg-white rounded-full mb-10 w-40 h-auto' />
+              <p className="text-md max-w-[40%]  text-center   text-white mb-8">
                 Psikolojik danışmanlık hizmetleri, bireyin kendini daha iyi tanımasına; duygusal ve zihinsel farkındalığını geliştirmesine ve yaşam kalitesini artırmasına yönelik profesyonel bir destek sürecidir.
                 Kendini daha yakından tanımak, kişisel gelişimini desteklemek ve yaşam kalitesini artırmak isteyen herkes psikolojik danışmanlık hizmetlerinden yararlanabilir.
 
@@ -42,9 +43,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="hidden lg:block">
-              <img src="/hero.png" alt="About" className="w-full h-full object-cover rounded-3xl" />
-            </div>
+
+            <div className="absolute bottom-0 left-0 w-full h-full z-0 bg-gradient-to-t from-accent via-transparent to-transparent "></div>
           </div>
 
           {/* About Section */}
@@ -115,7 +115,7 @@ export default function Home() {
               { title: "Özsaygı ve Özgüven Geliştirme" },
               { title: "Ebeveyn / Aile Danışmanlığı" },
               { title: "Travma Sonrası İyileşme" },
-            ].map(({ title, href }) => {
+            ].map(({ title }) => {
               const card = (
                 <div className="flex h-full flex-col justify-between border-r border-b border-[#e6e9ef] bg-white px-6 py-10 transition duration-200 group-hover:bg-secondary/5 ">
                   <h3 className="text-2xl font-bold text-primary-text leading-tight">
