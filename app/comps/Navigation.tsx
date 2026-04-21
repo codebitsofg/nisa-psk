@@ -16,7 +16,6 @@ const Navigation = () => {
                         <a href="/#hakkimda" className="text-primary-text hover:text-accent transition-colors font-bold font-serif-rewrite">Hakkımda</a>
                         <a href="/#hizmetler" className="text-primary-text hover:text-accent transition-colors font-bold font-serif-rewrite">Hizmetlerimiz</a>
                         <Link href="/#blog" className="text-primary-text hover:text-accent transition-colors font-bold font-serif-rewrite">Blog</Link>
-                        <Link href="/blog/bdt" className="text-primary-text hover:text-accent transition-colors font-bold font-serif-rewrite">BDT</Link>
                         <a href="/#iletisim" className="text-primary-text hover:text-accent transition-colors font-bold font-serif-rewrite">İletişim</a>
                         <a href="/#randevu" className="bg-accent text-white px-12 py-2 rounded-lg hover:bg-primary transition-colors font-semibold text-md text-center">
                             Randevu Al

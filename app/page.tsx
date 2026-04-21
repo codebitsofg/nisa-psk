@@ -90,13 +90,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 mb-16">
             <div className="max-w-3xl">
-              <p className="text-[18px] font-semibold tracking-wide text-primary uppercase">
-                Hizmet Alanlarım
-              </p>
+
               <h2 className="text-4xl sm:text-5xl font-serif-rewrite font-bold text-primary-text leading-tight ">
-                Destek verdiğimiz
-                <br />
-                alanlar
+                Hizmet Alanlarım
               </h2>
               <div className="mt-6 h-[3px] w-24 bg-primary" />
             </div>
