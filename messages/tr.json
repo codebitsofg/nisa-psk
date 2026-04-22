@@ -1,0 +1,135 @@
+{
+  "navigation": {
+    "about": "Hakkımda",
+    "services": "Hizmetlerimiz",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "appointment": "Randevu Al"
+  },
+  "hero": {
+    "title_1": "Kendi İçsel Yolculuğuna",
+    "title_2": "Hoş Geldin",
+    "description": "Psikolojik danışmanlık hizmetleri, bireyin kendini daha iyi tanımasına; duygusal ve zihinsel farkındalığını geliştirmesine ve yaşam kalitesini artırmasına yönelik profesyonel bir destek sürecidir. Kendini daha yakından tanımak, kişisel gelişimini desteklemek ve yaşam kalitesini artırmak isteyen herkes psikolojik danışmanlık hizmetlerinden yararlanabilir.",
+    "stats_prefix": "500+ Danışan",
+    "stats_suffix": "Tarafından Tercih Edildi",
+    "form_title": "Kolayca Randevu Al",
+    "form_subtitle": "Ücretsiz ön görüşme randevusu oluşturmak için lütfen formu doldurunuz"
+  },
+  "form": {
+    "name_label": "Adınız Soyadınız",
+    "name_placeholder": "Ad Soyad",
+    "email_label": "E-posta Adresi",
+    "email_placeholder": "ornek@mail.com",
+    "phone_label": "Telefon Numaranız",
+    "phone_placeholder": "Telefon Numaranız",
+    "service_label": "Hizmet Branşı",
+    "service_placeholder": "Seçiniz",
+    "services": {
+      "individual": "Bireysel Terapi",
+      "anxiety": "Kaygı Bozuklukları",
+      "depression": "Depresyon",
+      "relationship": "İlişki Problemleri",
+      "stress": "Stres Yönetimi",
+      "career": "Kariyer Danışmanlığı",
+      "parenting": "Ebeveyn Danışmanlığı"
+    },
+    "date_label": "Ön Görüşme İçin Tarih Seçin",
+    "date_placeholder": "Görüşme tarihi seçiniz",
+    "kvkk_prefix": "",
+    "kvkk_link": "KVKK Aydınlatma Metni",
+    "kvkk_suffix": "'ni okudum ve kabul ediyorum. Talebimin işlenmesine onay veriyorum.",
+    "submitting": "Gönderiliyor...",
+    "submit": "Hemen İletişime Geçin",
+    "submit_contact": "Gönder"
+  },
+  "about": {
+    "section_title": "Hakkımda",
+    "title": "Danışmanımızı Yakından Tanıyın",
+    "p1": "Ben Nisanur Azer Psikolojik danışman ve bilişsel davranışçı terapist olarak çalışmaktayım.",
+    "p2": "Marmara Üniversitesi Psikolojik Danışmanlık ve Rehberlik Bölümü’nden onur derecesiyle mezun olduktan sonra, Bilişsel Davranışçı Terapi alanında ileri düzey eğitimlerimi tamamladım. Mesleki gelişimimi desteklemek amacıyla yurt içinde ve yurt dışında birçok eğitim, seminer ve süpervizyon programına katıldım.",
+    "p3": "Nobel Yayın Evi tarafından yayımlanan “Gençlerden Gençlere Yardım Rehberi” adlı kitapta Kaygı bölümünün yazarı olarak yer aldım. Akademik bilgi ile klinik uygulamayı bir araya getirmeyi önemseyen bir yaklaşımla çalışmalarımı sürdürmekteyim.",
+    "p4": "Mesleki gelişim sürecimde İtalya, Hollanda ve Almanya başta olmak üzere birçok Avrupa ülkesinde çeşitli eğitimler ve seminerlere katıldım; ayrıca İtalya’da mesleki staj yaparak uluslararası uygulamaları yakından deneyimleme fırsatı buldum.",
+    "p5": "2021 yılından bu yana bireysel psikolojik danışmanlık ve kariyer danışmanlığı hizmetleri sunmakta; bunun yanı sıra ailelere ve ebeveynlere yönelik psiko-eğitim programları düzenlemeye devam etmekteyim.",
+    "p6": "Kariyerim boyunca; anksiyete, depresyon, travma sonrası stres bozukluğu (TSSB), ilişki problemleri, öfke yönetimi ve stres yönetimi gibi alanlarda destek arayan danışanlarla çalıştım. Terapideki temel amacım; danışanlarımın düşünce kalıplarını, duygusal ve davranışsal tepkilerini daha iyi fark etmelerine yardımcı olmak ve bu farkındalık doğrultusunda sağlıklı, kalıcı ve işlevsel değişim süreçlerine rehberlik etmektir.",
+    "p7": "Çalışmalarımda bilimsel temelli, etik ilkelere bağlı ve danışan odaklı bir yaklaşımı esas almaktayım.",
+    "button": "Hizmetler"
+  },
+  "services": {
+    "title": "Hizmet Alanlarım",
+    "items": {
+      "personal_growth": "Kişisel Gelişim",
+      "stress_management": "Stres Yönetimi",
+      "anxiety_disorders": "Kaygı Bozuklukları",
+      "relationship_issues": "İlişki Problemleri",
+      "depression": "Depresyon",
+      "self_esteem": "Özsaygı ve Özgüven Geliştirme",
+      "parenting": "Ebeveyn / Aile Danışmanlığı",
+      "trauma": "Travma Sonrası İyileşme"
+    },
+    "details": "Detaylar..",
+    "description": "Her bir danışanım için özelleştirilmiş yaklaşımlar uygulayarak, daha sağlıklı bir yaşam sürmeniz için gerekli psikolojik destek ve rehberliği sağlamaktayım."
+  },
+  "contact": {
+    "title": "Sizi Hemen Arayalım!",
+    "description": "Destek almak için formu doldurun, uzman ekibimiz en kısa sürede sizi arasın. Güvenilir, gizli ve profesyonel psikolojik danışmanlık hizmetiyle yanınızdayız."
+  },
+  "blog": {
+    "title": "Blog",
+    "posts": {
+      "psikolojik-danisma-nedir": "Psikolojik Danışma Nedir?",
+      "psikolojik-danismanin-yararlari": "Psikolojik Danışmanın Yararları Nelerdir?",
+      "psikolojik-danisma-kimlere-yoneliktir": "Psikolojik Danışma Kimlere Yöneliktir?",
+      "psikoegitim-nedir": "Psikoeğitim Nedir?",
+      "psikoegitim-yas-gruplari": "Psikoeğitim Hangi Yaş Grupları için Uygundur?",
+      "bdt-nedir": "Bilişsel Davranışçı Terapi (BDT) Nedir?",
+      "bdt-terapide-nasil-kullanilir": "BDT Terapide Nasıl Kullanılır?",
+      "kariyer-danismanligi-nedir": "Kariyer Danışmanlığı Nedir?"
+    },
+    "previous": "Önceki Yazı",
+    "all_posts": "Tüm Makaleler"
+  },
+  "footer": {
+    "contact_title": "İletişim",
+    "phone": "Telefon:",
+    "email": "E-posta:",
+    "location": "Konum:",
+    "location_value": "Türkiye ve Almanya",
+    "hours_title": "Çalışma Saatleri",
+    "days": "Pazartesi - Cumartesi",
+    "time": "10:00 - 22:00",
+    "rights": "© {year} NA Psikolojik Danışmanlık ve Eğitim. Tüm hakları saklıdır.",
+    "author": "Nisanur Azer - Psikolojik Danışman / Bilişsel Davranışçı Terapist"
+  },
+  "kvkk_modal": {
+    "title": "KVKK Aydınlatma Metni",
+    "p1_bold": "6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU (KVKK) AYDINLATMA METNİ",
+    "p1": "Bu aydınlatma metni, veri sorumlusu sıfatıyla **NA Psikolojik Danışmanlık ve Eğitim** tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu’nun 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca hazırlanmıştır.",
+    "subtitle1": "1. Kişisel Verilerin İşlenme Amacı",
+    "p2": "Toplanan kişisel verileriniz (Ad, Soyad, Telefon, E-posta, Hizmet Tercihi), aşağıdaki amaçlarla işlenmektedir:",
+    "li1": "İletişim faaliyetlerinin yürütülmesi",
+    "li2": "Randevu ve ön görüşme taleplerinin yönetilmesi",
+    "li3": "Hizmet satış sonrası destek hizmetlerinin yürütülmesi",
+    "li4": "Müşteri ilişkileri yönetimi süreçlerinin planlanması ve icrası",
+    "subtitle2": "2. Kişisel Verilerin Aktarılması",
+    "p3": "Kişisel verileriniz, yukarıda belirtilen amaçların gerçekleştirilmesi doğrultusunda, yasal yükümlülüklerimizi yerine getirmek amacıyla yetkili kamu kurum ve kuruluşları ile paylaşılabilecektir. Verileriniz üçüncü şahıslara ticari amaçlarla satılmamaktadır.",
+    "subtitle3": "3. Kişisel Veri Toplamanın Yöntemi ve Hukuki Sebebi",
+    "p4": "Kişisel verileriniz, web sitemiz üzerindeki iletişim formu aracılığıyla elektronik ortamda toplanmaktadır. Bu veriler, Kanun’un 5. maddesinde belirtilen “ilgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması” hukuki sebebine dayalı olarak işlenmektedir.",
+    "subtitle4": "4. İlgili Kişinin Hakları",
+    "p5": "Kanun’un 11. maddesi uyarınca, verilerinizin işlenip işlenmediğini öğrenme, yanlış işlenmişse düzeltilmesini isteme, silinmesini veya yok edilmesini talep etme gibi haklara sahipsiniz. Bu haklarınızı kullanmak için bizimle iletişime geçebilirsiniz.",
+    "button": "Anladım"
+  },
+  "status_modal": {
+    "notification": "Bildirim",
+    "button": "Tamam",
+    "success_title": "Başarılı",
+    "error_title": "Hata",
+    "warning_title": "Uyarı",
+    "info_title": "Bilgi",
+    "warning_msg": "Lütfen KVKK metnini onaylayın.",
+    "success_msg": "Teşekkürler! Talebiniz başarıyla alındı, en kısa sürede sizinle iletişime geçeceğiz.",
+    "error_msg": "Bir hata oluştu, lütfen tekrar deneyin.",
+    "title_required": "Onay Gerekli",
+    "title_received": "Talebiniz Alındı",
+    "title_error": "Bir Sorun Oluştu"
+  }
+}

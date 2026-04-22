@@ -2,6 +2,7 @@
 
 import React from "react";
 import { X, CheckCircle2, AlertCircle, Info } from "lucide-react";
+import {useTranslations} from "next-intl";
 
 export type StatusType = "success" | "error" | "info" | "warning";
 
@@ -14,27 +15,29 @@ interface StatusModalProps {
 }
 
 const StatusModal = ({ isOpen, onClose, type, title, message }: StatusModalProps) => {
+  const t = useTranslations("status_modal");
+
   if (!isOpen) return null;
 
   const config = {
     success: {
       icon: <CheckCircle2 className="w-12 h-12 text-green-500" />,
-      defaultTitle: "Başarılı",
+      defaultTitle: t("success_title"),
       buttonClass: "bg-green-600 hover:bg-green-700",
     },
     error: {
       icon: <AlertCircle className="w-12 h-12 text-red-500" />,
-      defaultTitle: "Hata",
+      defaultTitle: t("error_title"),
       buttonClass: "bg-red-600 hover:bg-red-700",
     },
     warning: {
       icon: <AlertCircle className="w-12 h-12 text-amber-500" />,
-      defaultTitle: "Uyarı",
+      defaultTitle: t("warning_title"),
       buttonClass: "bg-amber-600 hover:bg-amber-700",
     },
     info: {
       icon: <Info className="w-12 h-12 text-accent" />,
-      defaultTitle: "Bilgi",
+      defaultTitle: t("info_title"),
       buttonClass: "bg-accent hover:bg-primary",
     },
   };
@@ -45,7 +48,7 @@ const StatusModal = ({ isOpen, onClose, type, title, message }: StatusModalProps
     <div className="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-in fade-in duration-300">
       <div className="bg-white rounded-3xl w-full max-w-md overflow-hidden shadow-2xl flex flex-col animate-in zoom-in-95 duration-300">
         <div className="flex items-center justify-between p-4 border-b">
-          <span className="font-semibold text-gray-500 text-sm">Bildirim</span>
+          <span className="font-semibold text-gray-500 text-sm">{t("notification")}</span>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -71,7 +74,7 @@ const StatusModal = ({ isOpen, onClose, type, title, message }: StatusModalProps
             onClick={onClose}
             className={`w-full text-white px-8 py-3 rounded-xl transition-all font-bold text-lg shadow-lg active:scale-[0.98] ${buttonClass}`}
           >
-            Tamam
+            {t("button")}
           </button>
         </div>
       </div>

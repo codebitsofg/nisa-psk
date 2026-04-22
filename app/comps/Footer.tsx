@@ -1,6 +1,8 @@
 import React from 'react'
+import {useTranslations} from 'next-intl';
 
 const Footer = () => {
+    const t = useTranslations("footer");
     return (
         <footer id="iletisim" className="pt-16  pb-8 px-4 sm:px-6 lg:px-8 mt-14  text-gray-900">
             <div className="max-w-7xl mx-auto">
@@ -9,33 +11,33 @@ const Footer = () => {
                         <img src="/logo.png" alt="NA Psikolojik Danışmanlık ve Eğitim" className=' w-40 h-auto' />
                     </div>
                     <div className="text-left">
-                        <h4 className="text-lg font-semibold text-primary-text mb-4">İletişim</h4>
+                        <h4 className="text-lg font-semibold text-primary-text mb-4">{t("contact_title")}</h4>
                         <div className="space-y-2 text-primary-text/70">
                             <p>
-                                <span className="font-semibold">Telefon:</span> +90 555 123 45 67
+                                <span className="font-semibold">{t("phone")}</span> +90 555 123 45 67
                             </p>
                             <p>
-                                <span className="font-semibold">E-posta:</span> info@napsikolojik.com
+                                <span className="font-semibold">{t("email")}</span> info@napsikolojik.com
                             </p>
                             <p>
-                                <span className="font-semibold">Konum:</span> Türkiye ve Almanya
+                                <span className="font-semibold">{t("location")}</span> {t("location_value")}
                             </p>
                         </div>
                     </div>
                     <div className="text-left flex justify-between">
-                        <h4 className="text-lg font-semibold text-primary-text mb-4">Çalışma Saatleri</h4>
+                        <h4 className="text-lg font-semibold text-primary-text mb-4">{t("hours_title")}</h4>
                         <div className="text-primary-text/70">
-                            <p>Pazartesi - Cumartesi</p>
-                            <p>10:00 - 22:00</p>
+                            <p>{t("days")}</p>
+                            <p>{t("time")}</p>
                         </div>
                     </div>
                 </div>
                 <div className="pt-8 border-t border-gray-100 text-center">
                     <p className="text-primary-text/70 text-sm">
-                        © {new Date().getFullYear()} NA Psikolojik Danışmanlık ve Eğitim. Tüm hakları saklıdır.
+                        {t("rights", { year: new Date().getFullYear() })}
                     </p>
                     <p className="text-primary-text/70 text-sm ">
-                        Nisanur Azer - Psikolojik Danışman / Bilişsel Davranışçı Terapist
+                        {t("author")}
                     </p>
                 </div>
             </div>

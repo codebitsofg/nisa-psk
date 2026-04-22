@@ -1,12 +1,9 @@
-import Link from "next/link";
-import { notFound } from "next/navigation";
-
-type BlogPostContentItem =
+export type BlogPostContentItem =
     | { type: "paragraph"; text: string }
     | { type: "heading"; text: string }
     | { type: "list"; items: string[] };
 
-type BlogPost = {
+export type BlogPost = {
     title: string;
     date: string;
     category: string;
@@ -14,8 +11,7 @@ type BlogPost = {
     content: BlogPostContentItem[];
 };
 
-// Blog post data
-const blogPosts: Record<string, BlogPost> = {
+export const blogPostsTr: Record<string, BlogPost> = {
     "psikolojik-danisma-nedir": {
         title: "Psikolojik Danışma Nedir?",
         date: "Ocak 6, 2026",
@@ -244,7 +240,7 @@ const blogPosts: Record<string, BlogPost> = {
             {
                 type: "list",
                 items: [
-                    "Kişilik Envanterleri: Bu testler, bireyin kişilik özelliklerini belirlemeye yardımcı olur. Örneğin, Myers-Briggs Tip Göstergesi (MBTI) veya Big Five Kişilik Testi kişilik tiplerini analiz edebilir.",
+                    "Kişilik Envanterleri: Bu testler, bireyin kişilik özelliklerini belirlemeye yardımcı olur. Örneğin, Myers-Briggs Tip Göstergesi (MBTI) oder Big Five Kişilik Testi kişilik tiplerini analiz edebilir.",
                     "Yetenek ve İlgi Testleri: Bireyin güçlü ve zayıf yönlerini anlamaya yönelik testlerdir. Kariyer Yönelim Envanteri (CTI) veya Holland Kodları gibi testler, kişilerin ilgi alanlarına uygun kariyer seçenekleri sunar.",
                     "Zeka Testleri: Bu testler, bireylerin analitik düşünme yeteneklerini, problem çözme becerilerini ve genel zekalarını ölçer.",
                     "Değerler Testleri: Bu testler, bireylerin iş hayatındaki önceliklerini (örneğin, gelir, iş güvencesi, tatmin) anlamaya yönelik çalışmalardır.",
@@ -278,174 +274,265 @@ const blogPosts: Record<string, BlogPost> = {
     },
 };
 
-// All blog posts for sidebar
-const allPosts = [
-    { slug: "psikolojik-danisma-nedir", title: "Psikolojik Danışma Nedir?" },
-    {
-        slug: "psikolojik-danismanin-yararlari",
-        title: "Psikolojik Danışmanın Yararları Nelerdir?",
+export const blogPostsDe: Record<string, BlogPost> = {
+    "psikolojik-danisma-nedir": {
+        title: "Was ist psychologische Beratung?",
+        date: "6. Januar 2026",
+        category: "Psychologische Beratung",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Die psychologische Beratung ist ein professioneller Unterstützungsdienst, der Menschen dabei hilft, mit emotionalen, psychologischen und sozialen Problemen umzugehen. Es ist ein Begleitungsprozess, der in Einzelgesprächen stattfindet, um Einzelpersonen dabei zu helfen, mit Stress, Angstzuständen, Depressionen, Beziehungsproblemen, Entscheidungsschwierigkeiten und anderen psychologischen Herausforderungen in ihrem Leben umzugehen.",
+            },
+            {
+                type: "paragraph",
+                text: "Das Hauptziel der psychologischen Beratung ist es, dem Klienten zu helfen, sein inneres Potenzial zu entdecken, eine gesündere Beziehung zu seinen Gefühlen und Gedanken aufzubauen, seine persönliche Entwicklung zu unterstützen und sein Leben effektiver zu gestalten. Dieser Prozess ermöglicht es dem Klienten, die zugrunde liegenden Ursachen seiner Probleme zu verstehen und ein Bewusstsein dafür zu entwickeln, wie er damit umgehen kann.",
+            },
+            {
+                type: "paragraph",
+                text: "Psychologische Beratung kann nicht nur in schwierigen Zeiten, sondern auch zur persönlichen Weiterentwicklung und Bewusstseinsbildung in Anspruch genommen werden. Jeder Mensch erlebt emotionale und psychologische Herausforderungen anders, und die psychologische Beratung bietet individuelle Lösungen, die es ermöglichen, Probleme auf gesunde Weise zu lösen.",
+            },
+        ],
     },
-    {
-        slug: "psikolojik-danisma-kimlere-yoneliktir",
-        title: "Psikolojik Danışma Kimlere Yöneliktir?",
+    "psikolojik-danismanin-yararlari": {
+        title: "Was sind die Vorteile der psychologischen Beratung?",
+        date: "6. Januar 2026",
+        category: "Psychologische Beratung",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Die psychologische Beratung ist ein professioneller Prozess zur Verbesserung des geistigen und emotionalen Wohlbefindens. Sie ermöglicht es den Menschen, sowohl mit alltäglichen Herausforderungen umzugehen als auch tiefergehende Ziele der persönlichen Entwicklung zu erreichen. Die wichtigsten Vorteile sind:",
+            },
+            {
+                type: "heading",
+                text: "Vorteile der psychologischen Beratung",
+            },
+            {
+                type: "list",
+                items: [
+                    "Emotionale Balance und psychische Heilung: Eine psychologische Beratung hilft, mit emotionaler Instabilität und psychischen Traumata besser umzugehen. Der Klient kann durch professionelle Unterstützung bei Stress, Angstzuständen und Depressionen den inneren Frieden wiederherstellen.",
+                    "Selbstwahrnehmung und Entwicklung: Die Beratung hilft Menschen, sich selbst besser kennenzulernen und ihre persönlichen Werte und Ziele zu definieren. Die Klienten entdecken eigene Denk- und Verhaltensmuster und machen wichtige Schritte auf dem Weg zur optimalen Nutzung ihres Potenzials.",
+                    "Verbesserung der Kommunikationsfähigkeiten: Die Beratung ermöglicht es, gesünder und effektiver mit dem sozialen Umfeld zu kommunizieren. Eine gute Kommunikation steigert den Erfolg und fördert das Aufbauen gesünderer Beziehungen.",
+                    "Bewältigungsstrategien für Herausforderungen: Die Beratung entwickelt die Fähigkeit zur Bewältigung von alltäglichen Herausforderungen. Sie bietet effektive Bewältigungsstrategien im Umgang mit Stressfaktoren, beruflichem Druck, familiären Problemen oder persönlichen Traumata.",
+                    "Stressbewältigung und mentale Flexibilität: Die Beratung hilft, mit Stress im Alltag effektiver umzugehen. Sie vermittelt Techniken, um die körperlichen und emotionalen Auswirkungen von Stress zu reduzieren.",
+                    "Stärkung der Entscheidungsfindung: Die Beratung führt die Klienten bei wichtigen Lebensentscheidungen, um fundiertere Entscheidungen treffen zu können.",
+                ],
+            },
+            {
+                type: "paragraph",
+                text: "Die psychologische Beratung ist nicht nur in Krisenzeiten, sondern auch für die persönliche Entwicklung und das langfristige Wohlbefinden ein wertvolles Instrument.",
+            },
+        ],
     },
-    { slug: "psikoegitim-nedir", title: "Psikoeğitim Nedir?" },
-    {
-        slug: "psikoegitim-yas-gruplari",
-        title: "Psikoeğitim Hangi Yaş Grupları için Uygundur?",
+    "psikolojik-danisma-kimlere-yoneliktir": {
+        title: "An wen richtet sich die psychologische Beratung?",
+        date: "6. Januar 2026",
+        category: "Psychologische Beratung",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Die psychologische Beratung ist ein Unterstützungsangebot, das Menschen jeden Alters und in jeder Lebensphase zur Verfügung steht.",
+            },
+            {
+                type: "paragraph",
+                text: "Jugendliche und Heranwachsende: Die Pubertät ist eine Phase der Identitätssuche, die mit emotionalen und psychologischen Veränderungen einhergeht. In dieser Phase ist psychologische Unterstützung wichtig.",
+            },
+            {
+                type: "paragraph",
+                text: "Erwachsene: Menschen, die mit Schwierigkeiten im Berufsleben, familiärer Verantwortung, Berufswahl, Ehe oder Beziehungen konfrontiert sind, können von der Beratung profitieren.",
+            },
+            {
+                type: "paragraph",
+                text: "Ältere Menschen: Prozesse wie Altern, Ruhestand oder Einsamkeit können durch psychologische Beratung besser bewältigt werden.",
+            },
+            {
+                type: "paragraph",
+                text: "Jeder, der sich besser kennenlernen und seine Lebensqualität verbessern möchte, kann psychologische Beratung in Anspruch nehmen.",
+            },
+        ],
     },
-    { slug: "bdt-nedir", title: "Bilişsel Davranışçı Terapi (BDT) Nedir?" },
-    {
-        slug: "bdt-terapide-nasil-kullanilir",
-        title: "BDT Terapide Nasıl Kullanılır?",
+    "psikoegitim-nedir": {
+        title: "Was ist Psychoedukation?",
+        date: "6. Januar 2026",
+        category: "Psychoedukation",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Psychoedukation ist ein Prozess, bei dem verschiedene Schulungsübungen und Interventionsmethoden eingesetzt werden, um die psychische Gesundheit zu verbessern. Es zielt darauf ab, die emotionale Belastbarkeit aufzubauen, Techniken zur Stressbewältigung zu erlernen und die Lebensqualität insgesamt zu verbessern.",
+            },
+            {
+                type: "heading",
+                text: "Vorteile der Psychoedukation",
+            },
+            {
+                type: "list",
+                items: [
+                    "Emotionale und psychische Gesundheit: Verbessert die emotionale Intelligenz und das Bewusstsein über die eigenen Gefühle.",
+                    "Stressmanagement und Genesung: Erhöht die Fähigkeit zur Stressbewältigung und führt durch den Genesungsprozess psychischer Erkrankungen.",
+                    "Kommunikation: Es werden Techniken zur empathischen Kommunikation erlernt, was die sozialen Beziehungen stärkt.",
+                    "Persönliche Entwicklung: Stärkt die Resilienz des Einzelnen gegenüber Belastungen.",
+                    "Psychoedukative Unterstützung: Fördert eine Verbesserung der allgemeinen Lebensqualität.",
+                ],
+            },
+        ],
     },
-    { slug: "kariyer-danismanligi-nedir", title: "Kariyer Danışmanlığı Nedir?" },
-];
-
-export default async function BlogPostPage({
-    params,
-}: {
-    params: Promise<{ slug: string }>;
-}) {
-    const { slug } = await params;
-    const post = blogPosts[slug as keyof typeof blogPosts];
-
-    if (!post) {
-        notFound();
-    }
-
-    // Find current post index for previous/next navigation
-    const currentIndex = allPosts.findIndex((p) => p.slug === slug);
-    const previousPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
-
-    return (
-        <main className="min-h-screen bg-white py-12  mt-30 px-4 sm:px-6 lg:px-8">
-
-            <img src="https://images.unsplash.com/photo-1494797262163-102fae527c62?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Background" className="w-full h-[60vh] object-cover max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-9" />
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-3 gap-8">
-                    {/* Main Content */}
-                    <article className="lg:col-span-2">
-                        {/* Header */}
-                        <div className="mb-8 space-y-4">
-                            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
-
-                                <div className="flex items-center gap-2">
-                                    <svg
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                                        />
-                                    </svg>
-                                    <span>{post.category}</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <svg
-                                        className="w-4 h-4"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                        />
-                                    </svg>
-                                    <span>{post.comments}</span>
-                                </div>
-                            </div>
-                            <h1 className="text-4xl sm:text-5xl font-serif font-bold text-primary-text leading-tight">
-                                {post.title}
-                            </h1>
-                        </div>
-
-                        {/* Content */}
-                        <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
-                            {post.content.map((item, index) => {
-                                if (item.type === "paragraph") {
-                                    return (
-                                        <p key={index} className="text-base leading-7">
-                                            {item.text}
-                                        </p>
-                                    );
-                                }
-                                if (item.type === "heading") {
-                                    return (
-                                        <h2
-                                            key={index}
-                                            className="text-2xl sm:text-3xl font-serif font-bold text-primary-text mt-8 mb-4"
-                                        >
-                                            {item.text}
-                                        </h2>
-                                    );
-                                }
-                                if (item.type === "list") {
-                                    return (
-                                        <ul
-                                            key={index}
-                                            className="list-disc pl-6 space-y-2 text-base leading-7"
-                                        >
-                                            {item.items.map((listItem: string, listIndex: number) => (
-                                                <li key={listIndex}>{listItem}</li>
-                                            ))}
-                                        </ul>
-                                    );
-                                }
-                                return null;
-                            })}
-                        </div>
-
-                        {/* Previous Post Navigation */}
-                        {previousPost && (
-                            <div className="mt-12 pt-8 border-t border-gray-200">
-                                <Link
-                                    href={`/blog/${previousPost.slug}`}
-                                    className="group flex items-center gap-2 text-accent hover:text-primary transition-colors"
-                                >
-                                    <span className="text-sm font-semibold">← Önceki Yazı</span>
-                                    <span className="text-sm font-semibold group-hover:underline">
-                                        {previousPost.title}
-                                    </span>
-                                </Link>
-                            </div>
-                        )}
-                    </article>
-
-                    {/* Sidebar */}
-                    <aside className="lg:col-span-1  pt-10">
-                        <div className="bg-white border border-gray-200 rounded-lg p-6  sticky  top-24">
-                            <h3 className="text-xl font-serif font-bold text-accent mb-6">
-                                Tüm Makaleler
-                            </h3>
-                            <ul className="space-y-3">
-                                {allPosts.map((p) => (
-                                    <li key={p.slug}>
-                                        <Link
-                                            href={`/blog/${p.slug}`}
-                                            className={`block text-sm leading-relaxed transition-colors ${p.slug === slug
-                                                ? "text-accent font-semibold"
-                                                : "text-gray-700 hover:text-primary"
-                                                }`}
-                                        >
-                                            {p.title}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </main>
-    );
-}
-
+    "psikoegitim-yas-gruplari": {
+        title: "Für welche Altersgruppen ist Psychoedukation geeignet?",
+        date: "6. Januar 2026",
+        category: "Psychoedukation",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Psychoedukation kann mit spezifisch entwickelten Programmen bei jeder Altersgruppe angewendet werden:",
+            },
+            {
+                type: "paragraph",
+                text: "Kinder: Konzentriert sich oft auf die emotionale Entwicklung, Empathie und Grundlagen der Kommunikationsfähigkeiten. Sie zielt darauf ab, die emotionale Intelligenz von Kindern zu fördern und ihnen beizubringen, wie sie mit Stress umgehen können.",
+            },
+            {
+                type: "paragraph",
+                text: "Jugendliche: Das Jugendalter ist geprägt von starken emotionalen Veränderungen. Psychoedukation fokussiert sich auf Identitätsentwicklung, Stressbewältigung und stärkt das Selbstbewusstsein.",
+            },
+            {
+                type: "paragraph",
+                text: "Erwachsene: Programme für Erwachsene konzentrieren sich auf Stress und Leistungsdruck im Arbeitsleben, effektive elterliche Kommunikation und emotionale Kompetenzen.",
+            },
+            {
+                type: "paragraph",
+                text: "Senioren: Unterstützt bei der Bewältigung von Alterserscheinungen, Einsamkeit, Verlustängsten und chronischen Krankheiten.",
+            },
+            {
+                type: "paragraph",
+                text: "Psychoedukation kann für jede Altersgruppe und persönliche Situation individualisiert werden.",
+            },
+        ],
+    },
+    "bdt-nedir": {
+        title: "Was ist Kognitive Verhaltenstherapie (KVT)?",
+        date: "6. Januar 2026",
+        category: "Therapiemethoden",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Die Kognitive Verhaltenstherapie (KVT) ist ein therapeutischer Ansatz, bei dem die Beziehung zwischen den Gedanken, Emotionen und Verhaltensweisen eines Menschen im Vordergrund steht. Sie zielt darauf ab, irrationale oder schädliche Gedanken zu erkennen und durch gesündere, realistischere Denkmuster zu ersetzen.",
+            },
+            {
+                type: "heading",
+                text: "Die Hauptziele",
+            },
+            {
+                type: "list",
+                items: [
+                    "Negative Gedanken ändern: KVT hilft Menschen, negative Gedanken zu erkennen. Aus einem Gedanken wie 'Ich versage immer' kann 'Manchmal habe ich Schwierigkeiten, aber ich kann mein Bestes geben' werden.",
+                    "Ein anderes Verhalten erlernen: Unsere Gedanken beeinflussen unser Verhalten. Ein sozial ängstlicher Mensch wird soziale Orte meiden. Die KVT unterstützt ihn dabei, seine Ängste zu überwinden und neue Erfahrungen zu sammeln.",
+                    "Den emotionalen Zustand verbessern: Die Therapie verdeutlicht den Zusammenhang zwischen unseren negativen Gedanken und unserem Befinden.",
+                ],
+            },
+            {
+                type: "paragraph",
+                text: "Dieser therapeutische Ansatz erfordert eine aktive Zusammenarbeit zwischen Klient und Therapeut. Zusammen werden Werkzeuge erarbeitet und neue, gesündere Gewohnheiten gebildet.",
+            },
+            {
+                type: "paragraph",
+                text: "Zusammengefasst soll die KVT Ihr Leben durch die Umstrukturierung von negativen Denkmustern verbessern. Es ist eine sehr effektive Behandlungsmethode bei Ängsten, Stress und Phobien.",
+            },
+        ],
+    },
+    "bdt-terapide-nasil-kullanilir": {
+        title: "Wie wird die KVT in der Therapie eingesetzt?",
+        date: "6. Januar 2026",
+        category: "Therapiemethoden",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Die Kognitive Verhaltenstherapie beginnt zunächst mit der Feststellung der ungesunden Denkmuster und verläuft in folgenden Schritten:",
+            },
+            {
+                type: "heading",
+                text: "Die Grundbausteine der KVT",
+            },
+            {
+                type: "list",
+                items: [
+                    "Feststellung belastender Gedanken und Überzeugungen: Im ersten Schritt analysiere ich den inneren Dialog meiner Klienten. Negative Gedanken fördern Symptome wie Angstzustände und Rückzug.",
+                    "Überprüfung der Realitätsnähe der negativen Gedanken: Ich hinterfrage die automatischen Denkmuster der Klienten und prüfe deren Logik. Meistens basieren diese auf katastrophisierenden und übergeneralisierenden falschen Annahmen.",
+                    "Ersetzen durch gesunde Denkmuster: Ich erarbeite mit dem Klienten zusammen alternative und gesündere Deutungsweisen für das eigene Denken.",
+                    "Verhalten ändern: Die KVT zielt nicht nur auf Änderungen in der Denkstruktur, sondern bewirkt auch nachhaltige Veränderungen auf der Verhaltensebene. Mit kleinen Übungen fördern wir ein neues, funktionales Verhalten.",
+                    "Stressreduzierung und Emotionsregulation: Der Klient erlernt kognitive und verhaltensbezogene Techniken, um die eigenen Gefühle im Alltag besser regulieren zu können.",
+                ],
+            },
+            {
+                type: "heading",
+                text: "Das Ergebnis",
+            },
+            {
+                type: "paragraph",
+                text: "Durch die KVT gelingt es meinen Klienten, alte und schädliche Denk- und Verhaltensmuster abzubauen und so ein ausgeglicheneres Leben zu führen.",
+            },
+            {
+                type: "paragraph",
+                text: "Im Laufe der Therapie gewinnt der Klient an mehr Selbsterkenntnis. Mein wichtigstes Anliegen für meine Klienten ist, durch mehr Bewusstsein eigenmächtig gesunde Entscheidungen für sich selbst treffen zu können.",
+            },
+        ],
+    },
+    "kariyer-danismanligi-nedir": {
+        title: "Was ist Karriereberatung?",
+        date: "6. Januar 2026",
+        category: "Karriereberatung",
+        comments: 0,
+        content: [
+            {
+                type: "paragraph",
+                text: "Die Karriereberatung ist ein professioneller Dienstleistungsbereich, der Einzelpersonen während des Prozesses der Berufswahl und Karriereentwicklung Orientierung bietet. Diese Begleitung stützt sich auf die Talente, Interessen, Werte und die Persönlichkeit des Klienten.",
+            },
+            {
+                type: "heading",
+                text: "Methoden der Karriereberatung können beinhalten:",
+            },
+            {
+                type: "paragraph",
+                text: "Psychologische Testverfahren und Evaluierungen",
+            },
+            {
+                type: "list",
+                items: [
+                    "Persönlichkeitsinventare: Tests helfen bei der Feststellung von persönlichen Neigungen. Tests wie der Myers-Briggs Typenindikator (MBTI) oder die Big Five analysieren Persönlichkeitstypen.",
+                    "Talent- und Interessenstests: Ermöglicht das Testen und Herausfinden beruflicher Stärken.",
+                    "Intelligenztests: Tests, die beispielsweise das analytische Denkvermögen oder Problemlösungskompetenzen prüfen.",
+                    "Wertetests: Testiert die Prioritäten von Klienten im Berufsleben (wie beispielsweise Einkommen vs. Arbeitsplatzsicherheit).",
+                ],
+            },
+            {
+                type: "heading",
+                text: "Die Bedeutung der Psychologischen Beratung für Ihre Karriere",
+            },
+            {
+                type: "paragraph",
+                text: "Psychologische Berater unterstützen Einzelpersonen bei der Auswertung solcher Testergebnisse und vermitteln die richtigen Karrierewege. Der Prozess unterstützt ebenso die persönliche Weiterentwicklung des Klienten.",
+            },
+            {
+                type: "paragraph",
+                text: "Auch im Vorhinein hilft der psychologische Prozess, um eine klarere Wahl der Karriererichtung treffen zu können, indem er beispielsweise Folgendes einbezieht:",
+            },
+            {
+                type: "list",
+                items: [
+                    "Selbsterkenntnis: Verbessert und formt das Bewusstsein für die eigenen Vorlieben, Stärken und Schwächen.",
+                    "Stress- und Angstmanagement: Vermittelt Stressbewältigungsstrategien für die eigenen Herausforderungen des modernen Arbeitslebens.",
+                    "Motivation und Zielsetzung: Motiviert bei der Verfolgung eigener Karriereschritte und fördert die persönliche Zielausrichtung.",
+                ],
+            },
+            {
+                type: "paragraph",
+                text: "Die Karriereberatung ist ein essenzieller Prozess für die richtige Karriererichtung und den beruflichen Erfolg. Psychologische Unterstützung bietet in diesem Prozess einen erheblichen Mehrwert, um mentale Barrieren zu überwinden und auch persönlich zu wachsen.",
+            },
+        ],
+    },
+};

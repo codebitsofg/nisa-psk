@@ -1,0 +1,135 @@
+{
+  "navigation": {
+    "about": "Über mich",
+    "services": "Leistungen",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "appointment": "Termin vereinbaren"
+  },
+  "hero": {
+    "title_1": "Willkommen zu deiner",
+    "title_2": "inneren Reise",
+    "description": "Psychologische Beratung ist eine professionelle Unterstützung, die darauf abzielt, sich selbst besser kennenzulernen, das emotionale und mentale Bewusstsein zu entwickeln und die Lebensqualität zu verbessern. Jeder, der sich näher kennenlernen, seine persönliche Entwicklung fördern und seine Lebensqualität verbessern möchte, kann psychologische Beratung in Anspruch nehmen.",
+    "stats_prefix": "Über 500 Klienten",
+    "stats_suffix": "vertrauen uns",
+    "form_title": "Einfach Termin vereinbaren",
+    "form_subtitle": "Füllen Sie das Formular für ein KOSTENLOSES 15-minütiges Vorgespräch aus."
+  },
+  "form": {
+    "name_label": "Vor- und Nachname",
+    "name_placeholder": "Max Mustermann",
+    "email_label": "E-Mail-Adresse",
+    "email_placeholder": "beispiel@mail.com",
+    "phone_label": "Telefonnummer",
+    "phone_placeholder": "Ihre Telefonnummer",
+    "service_label": "Beratungsbereich",
+    "service_placeholder": "Bitte wählen",
+    "services": {
+      "individual": "Einzeltherapie",
+      "anxiety": "Angststörungen",
+      "depression": "Depression",
+      "relationship": "Beziehungsprobleme",
+      "stress": "Stressbewältigung",
+      "career": "Karriereberatung",
+      "parenting": "Elternberatung"
+    },
+    "date_label": "Wählen Sie ein Datum für das Vorgespräch",
+    "date_placeholder": "Datum für das Gespräch auswählen",
+    "kvkk_prefix": "Ich habe die ",
+    "kvkk_link": "Datenschutzerklärung",
+    "kvkk_suffix": " gelesen und stimme zu. Ich willige in die Verarbeitung meiner Anfrage ein.",
+    "submitting": "Wird gesendet...",
+    "submit": "Jetzt kontaktieren",
+    "submit_contact": "Senden"
+  },
+  "about": {
+    "section_title": "Über mich",
+    "title": "Lernen Sie unsere Beraterin kennen",
+    "p1": "Ich bin Nisanur Azer, und arbeite als psychologische Beraterin und kognitive Verhaltenstherapeutin.",
+    "p2": "Nach meinem Abschluss mit Auszeichnung im Fachbereich Psychologische Beratung und Orientierung an der Marmara-Universität habe ich eine fortgeschrittene Ausbildung im Bereich der Kognitiven Verhaltenstherapie (KVT) abgeschlossen. Um meine berufliche Entwicklung zu fördern, habe ich an zahlreichen Schulungen, Seminaren und Supervisionsprogrammen im In- und Ausland teilgenommen.",
+    "p3": "Ich habe als Autorin des Kapitels über Angststörungen im Buch „Hilfsleitfaden von Jugendlichen für Jugendliche“ mitgewirkt, das vom Nobel-Verlag veröffentlicht wurde. In meiner Arbeit lege ich großen Wert darauf, akademisches Wissen mit klinischer Praxis zu verbinden.",
+    "p4": "Im Laufe meiner beruflichen Entwicklung habe ich an verschiedenen Schulungen und Seminaren in vielen europäischen Ländern teilgenommen, insbesondere in Italien, den Niederlanden und Deutschland. Darüber hinaus hatte ich die Möglichkeit, durch mein Berufspraktikum in Italien internationale Praktiken hautnah zu erleben.",
+    "p5": "Seit 2021 biete ich individuelle psychologische Beratung und Karriereberatung an und führe weiterhin psychoedukative Programme für Familien und Eltern durch.",
+    "p6": "Während meiner Karriere habe ich mit Klienten gearbeitet, die Unterstützung in Bereichen wie Angstzuständen, Depressionen, Posttraumatischer Belastungsstörung (PTBS), Beziehungsproblemen, Wut- und Stressbewältigung gesucht haben. Mein Hauptziel in der Beratung ist es, meinen Klienten zu helfen, ihre Denkmuster, emotionalen und verhaltensbezogenen Reaktionen besser zu erkennen und sie auf Basis dieses Bewusstseins durch gesunde, dauerhafte und funktionale Veränderungsprozesse zu begleiten.",
+    "p7": "In meiner Arbeit verfolge ich einen wissenschaftlich fundierten, ethischen und klaren klientenzentrierten Ansatz.",
+    "button": "Leistungen"
+  },
+  "services": {
+    "title": "Meine Leistungsbereiche",
+    "items": {
+      "personal_growth": "Persönlichkeitsentwicklung",
+      "stress_management": "Stressbewältigung",
+      "anxiety_disorders": "Angststörungen",
+      "relationship_issues": "Beziehungsprobleme",
+      "depression": "Depression",
+      "self_esteem": "Selbstwert- und Selbstvertrauensaufbau",
+      "parenting": "Eltern- und Familienberatung",
+      "trauma": "Posttraumatische Heilung"
+    },
+    "details": "Details..",
+    "description": "Indem ich für jeden Klienten maßgeschneiderte Ansätze anwende, biete ich die notwendige psychologische Unterstützung und Anleitung für ein gesünderes Leben."
+  },
+  "contact": {
+    "title": "Wir rufen Sie umgehend an!",
+    "description": "Füllen Sie das Formular aus, um Unterstützung zu erhalten. Unser Expertenteam wird Sie so schnell wie möglich kontaktieren. Wir stehen Ihnen mit zuverlässigen, vertraulichen und professionellen psychologischen Beratungsdiensten zur Seite."
+  },
+  "blog": {
+    "title": "Blog",
+    "posts": {
+      "psikolojik-danisma-nedir": "Was ist psychologische Beratung?",
+      "psikolojik-danismanin-yararlari": "Was sind die Vorteile der psychologischen Beratung?",
+      "psikolojik-danisma-kimlere-yoneliktir": "An wen richtet sich die psychologische Beratung?",
+      "psikoegitim-nedir": "Was ist Psychoedukation?",
+      "psikoegitim-yas-gruplari": "Für welche Altersgruppen ist Psychoedukation geeignet?",
+      "bdt-nedir": "Was ist Kognitive Verhaltenstherapie (KVT)?",
+      "bdt-terapide-nasil-kullanilir": "Wie wird die KVT in der Therapie eingesetzt?",
+      "kariyer-danismanligi-nedir": "Was ist Karriereberatung?"
+    },
+    "previous": "Vorheriger Beitrag",
+    "all_posts": "Alle Artikel"
+  },
+  "footer": {
+    "contact_title": "Kontakt",
+    "phone": "Telefon:",
+    "email": "E-Mail:",
+    "location": "Standort:",
+    "location_value": "Türkei und Deutschland",
+    "hours_title": "Öffnungszeiten",
+    "days": "Montag - Samstag",
+    "time": "10:00 - 22:00 Uhr",
+    "rights": "© {year} NA Psychologische Beratung und Bildung. Alle Rechte vorbehalten.",
+    "author": "Nisanur Azer - Psychologische Beraterin / Kognitive Verhaltenstherapeutin"
+  },
+  "kvkk_modal": {
+    "title": "Datenschutzerklärung",
+    "p1_bold": "DATENSCHUTZERKLÄRUNG GEMÄSS DEM GESETZ NR. 6698 ZUM SCHUTZ PERSONENBEZOGENER DATEN",
+    "p1": "Diese Datenschutzerklärung wurde in der Eigenschaft als Datenverantwortlicher von **NA Psychologische Beratung und Bildung** in Übereinstimmung mit Artikel 10 des Gesetzes zum Schutz personenbezogener Daten Nr. 6698 und dem Kommuniqué über die Verfahren und Grundsätze, die bei der Erfüllung der Informationspflicht zu beachten sind, erstellt.",
+    "subtitle1": "1. Zweck der Verarbeitung personenbezogener Daten",
+    "p2": "Ihre erhobenen personenbezogenen Daten (Vorname, Nachname, Telefon, E-Mail, Leistungseinstellung) werden für folgende Zwecke verarbeitet:",
+    "li1": "Durchführung von Kommunikationsaktivitäten",
+    "li2": "Verwaltung von Termin- und Vorgesprächsanfragen",
+    "li3": "Durchführung von Supportleistungen nach dem Verkauf",
+    "li4": "Planung und Durchführung von Prozessen des Kundenbeziehungsmanagements",
+    "subtitle2": "2. Übermittlung personenbezogener Daten",
+    "p3": "Ihre personenbezogenen Daten können an befugte öffentliche Einrichtungen und Organisationen weitergegeben werden, um unsere gesetzlichen Verpflichtungen gemäß der Verwirklichung der oben genannten Zwecke zu erfüllen. Ihre Daten werden nicht zu kommerziellen Zwecken an Dritte verkauft.",
+    "subtitle3": "3. Methode und rechtlicher Grund für die Erhebung personenbezogener Daten",
+    "p4": "Ihre personenbezogenen Daten werden elektronisch über das Kontaktformular auf unserer Website erhoben. Diese Daten werden auf Grundlage des rechtlichen Grundes verarbeitet, der in Artikel 5 des Gesetzes festgelegt ist: „Die Verarbeitung von Daten ist für die berechtigten Interessen des Datenverantwortlichen erforderlich, sofern sie die Grundrechte und Grundfreiheiten der betroffenen Person nicht beeinträchtigen.“",
+    "subtitle4": "4. Rechte der betroffenen Person",
+    "p5": "Gemäß Artikel 11 des Gesetzes haben Sie das Recht zu erfahren, ob Ihre Daten verarbeitet wurden, deren Berichtigung zu verlangen, wenn sie falsch verarbeitet wurden, und deren Löschung oder Vernichtung zu fordern. Sie können uns kontaktieren, um diese Rechte auszuüben.",
+    "button": "Verstanden"
+  },
+  "status_modal": {
+    "notification": "Benachrichtigung",
+    "button": "Ok",
+    "success_title": "Erfolgreich",
+    "error_title": "Fehler",
+    "warning_title": "Warnung",
+    "info_title": "Information",
+    "warning_msg": "Bitte bestätigen Sie die Datenschutzerklärung.",
+    "success_msg": "Vielen Dank! Ihre Anfrage wurde erfolgreich empfangen. Wir werden uns in Kürze mit Ihnen in Verbindung setzen.",
+    "error_msg": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "title_required": "Zustimmung erforderlich",
+    "title_received": "Anfrage erhalten",
+    "title_error": "Ein Problem ist aufgetreten"
+  }
+}
