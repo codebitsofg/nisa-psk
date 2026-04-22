@@ -104,12 +104,12 @@ export default function Home() {
             <div className="text-white space-y-8 animate-in fade-in slide-in-from-left duration-1000">
               <div className="flex flex-col items-start gap-6">
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif-rewrite leading-tight">
-                  {t("hero.title_1")} <br />
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-serif-rewrite leading-tight">
+                  {t("hero.title_1")} <br className="hidden sm:block" />
                   <span className="text-white/80">{t("hero.title_2")}</span>
                 </h1>
               </div>
-              <p className="text-lg md:text-xl text-white/90 max-w-xl leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-xl leading-relaxed">
                 {t("hero.description")}
               </p>
 
@@ -244,26 +244,28 @@ export default function Home() {
       />
 
       {/* About Section */}
-      <section id="hakkimda" className="py-20 pt-24   pl-5 gap-5 flex flex-row">
-        <div className="min-w-[300px]   flex-1 p-16">
+      <section id="hakkimda" className="py-12 sm:py-20 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 px-4 sm:px-6 lg:px-8">
+        <div className="w-full lg:w-1/2 aspect-square lg:aspect-auto h-[300px] sm:h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl">
           <img src="/therapy.jpg" alt="About" className="w-full h-full object-cover" />
         </div>
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-white  p-8 shadow-lg  py-16 text-left">
-            <h2 className="text-xl font-bold font-serif-rewrite pb-10 text-primary-text mb-6">{t("about.section_title")}</h2>
-            <p className=" text-gray-700 mb-5 text-2xl font-bold font-serif-rewrite mb-2">{t("about.title")} </p>
-            <p className="text-gray-600  mb-4">{t("about.p1")}<br /></p>
-            <p className="text-gray-600  mb-4">{t("about.p2")}<br /></p>
-            <p className="text-gray-600  mb-4">{t("about.p3")}<br /></p>
-            <p className="text-gray-600  mb-4">{t("about.p4")}<br /></p>
-            <p className="text-gray-600  mb-4">{t("about.p5")}<br /></p>
-            <p className="text-gray-600  mb-4">{t("about.p6")}<br /></p>
-            {t("about.p7")}
+        <div className="w-full lg:w-1/2">
+          <div className="bg-white p-6 sm:p-10 lg:p-16 shadow-lg rounded-2xl text-left">
+            <h2 className="text-lg sm:text-xl font-bold font-serif-rewrite border-b-2 border-primary inline-block pb-2 mb-6 text-primary-text">{t("about.section_title")}</h2>
+            <p className="text-gray-700 mb-4 text-xl sm:text-2xl font-bold font-serif-rewrite">{t("about.title")} </p>
+            <div className="space-y-4 text-gray-600 leading-relaxed text-sm sm:text-base">
+              <p>{t("about.p1")}</p>
+              <p>{t("about.p2")}</p>
+              <p>{t("about.p3")}</p>
+              <p>{t("about.p4")}</p>
+              <p>{t("about.p5")}</p>
+              <p>{t("about.p6")}</p>
+              <p className="font-semibold text-primary-text">{t("about.p7")}</p>
+            </div>
 
-            <div className="flex flex-col sm:flex-row mt-10 gap-4">
+            <div className="mt-8">
               <a
                 href="#randevu"
-                className={` bg-accent text-white px-12 py-4 rounded-lg hover:bg-primary transition-colors font-semibold text-lg text-center `}
+                className="inline-block w-full sm:w-auto bg-accent text-white px-10 py-3 rounded-lg hover:bg-primary transition-colors font-semibold text-lg text-center"
               >
                 {t("about.button")}
               </a>

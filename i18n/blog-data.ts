@@ -275,7 +275,7 @@ export const blogPostsTr: Record<string, BlogPost> = {
 };
 
 export const blogPostsDe: Record<string, BlogPost> = {
-    "psikolojik-danisma-nedir": {
+    "was-ist-psychologische-beratung": {
         title: "Was ist psychologische Beratung?",
         date: "6. Januar 2026",
         category: "Psychologische Beratung",
@@ -295,7 +295,7 @@ export const blogPostsDe: Record<string, BlogPost> = {
             },
         ],
     },
-    "psikolojik-danismanin-yararlari": {
+    "was-sind-die-vorteile-der-psychologischen-beratung": {
         title: "Was sind die Vorteile der psychologischen Beratung?",
         date: "6. Januar 2026",
         category: "Psychologische Beratung",
@@ -326,7 +326,7 @@ export const blogPostsDe: Record<string, BlogPost> = {
             },
         ],
     },
-    "psikolojik-danisma-kimlere-yoneliktir": {
+    "an-wen-richtet-sich-die-psychologische-beratung": {
         title: "An wen richtet sich die psychologische Beratung?",
         date: "6. Januar 2026",
         category: "Psychologische Beratung",
@@ -354,7 +354,7 @@ export const blogPostsDe: Record<string, BlogPost> = {
             },
         ],
     },
-    "psikoegitim-nedir": {
+    "was-ist-psychoedukation": {
         title: "Was ist Psychoedukation?",
         date: "6. Januar 2026",
         category: "Psychoedukation",
@@ -380,7 +380,7 @@ export const blogPostsDe: Record<string, BlogPost> = {
             },
         ],
     },
-    "psikoegitim-yas-gruplari": {
+    "fuer-welche-altersgruppen-ist-psychoedukation-geeignet": {
         title: "Für welche Altersgruppen ist Psychoedukation geeignet?",
         date: "6. Januar 2026",
         category: "Psychoedukation",
@@ -412,7 +412,7 @@ export const blogPostsDe: Record<string, BlogPost> = {
             },
         ],
     },
-    "bdt-nedir": {
+    "was-ist-kognitive-verhaltenstherapie": {
         title: "Was ist Kognitive Verhaltenstherapie (KVT)?",
         date: "6. Januar 2026",
         category: "Therapiemethoden",
@@ -444,7 +444,7 @@ export const blogPostsDe: Record<string, BlogPost> = {
             },
         ],
     },
-    "bdt-terapide-nasil-kullanilir": {
+    "wie-wird-die-kvt-in-der-therapie-eingesetzt": {
         title: "Wie wird die KVT in der Therapie eingesetzt?",
         date: "6. Januar 2026",
         category: "Therapiemethoden",
@@ -482,7 +482,7 @@ export const blogPostsDe: Record<string, BlogPost> = {
             },
         ],
     },
-    "kariyer-danismanligi-nedir": {
+    "was-ist-karriereberatung": {
         title: "Was ist Karriereberatung?",
         date: "6. Januar 2026",
         category: "Karriereberatung",

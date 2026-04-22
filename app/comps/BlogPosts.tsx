@@ -8,9 +8,9 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 
-const posts = [
+const postsTr = [
     {
         id: "psikolojik-danisma-nedir",
         image:
@@ -61,8 +61,53 @@ const posts = [
     },
 ];
 
+const postsDe = [
+    {
+        id: "was-ist-psychologische-beratung",
+        image: "https://images.unsplash.com/photo-1568140398908-9bd642df4724?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        href: "/blog/was-ist-psychologische-beratung",
+    },
+    {
+        id: "was-sind-die-vorteile-der-psychologischen-beratung",
+        image: "https://images.unsplash.com/photo-1494797262163-102fae527c62?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        href: "/blog/was-sind-die-vorteile-der-psychologischen-beratung",
+    },
+    {
+        id: "an-wen-richtet-sich-die-psychologische-beratung",
+        image: "https://images.unsplash.com/photo-1660912354396-c28325d51aa4?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        href: "/blog/an-wen-richtet-sich-die-psychologische-beratung",
+    },
+    {
+        id: "was-ist-psychoedukation",
+        image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/was-ist-psychoedukation",
+    },
+    {
+        id: "fuer-welche-altersgruppen-ist-psychoedukation-geeignet",
+        image: "https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/fuer-welche-altersgruppen-ist-psychoedukation-geeignet",
+    },
+    {
+        id: "was-ist-kognitive-verhaltenstherapie",
+        image: "https://images.unsplash.com/photo-1461468611824-46457c0e11fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/was-ist-kognitive-verhaltenstherapie",
+    },
+    {
+        id: "wie-wird-die-kvt-in-der-therapie-eingesetzt",
+        image: "https://images.unsplash.com/photo-1609122881521-8a7ea5c570c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        href: "/blog/wie-wird-die-kvt-in-der-therapie-eingesetzt",
+    },
+    {
+        id: "was-ist-karriereberatung",
+        image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0",
+        href: "/blog/was-ist-karriereberatung",
+    },
+];
+
 const BlogPosts = () => {
     const t = useTranslations("blog");
+    const locale = useLocale();
+    const posts = locale === "de" ? postsDe : postsTr;
 
     return (
         <section id="blog" className="py-18 px-4 sm:px-6 lg:px-8 ">
@@ -103,8 +148,8 @@ const BlogPosts = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className=" hover:bg-primary-text hover:text-white cursor-pointer h-14 w-14" />
-                    <CarouselNext className=" hover:bg-primary-text hover:text-white cursor-pointer h-14 w-14  " />
+                    <CarouselPrevious className="hidden sm:flex hover:bg-primary-text hover:text-white cursor-pointer h-10 w-10 md:h-14 md:w-14" />
+                    <CarouselNext className="hidden sm:flex hover:bg-primary-text hover:text-white cursor-pointer h-10 w-10 md:h-14 md:w-14" />
                 </Carousel>
             </div>
         </section>

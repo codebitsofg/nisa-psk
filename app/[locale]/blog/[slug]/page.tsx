@@ -3,16 +3,8 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { blogPostsTr, blogPostsDe } from "@/i18n/blog-data";
 
-const allPostsKeys = [
-    "psikolojik-danisma-nedir",
-    "psikolojik-danismanin-yararlari",
-    "psikolojik-danisma-kimlere-yoneliktir",
-    "psikoegitim-nedir",
-    "psikoegitim-yas-gruplari",
-    "bdt-nedir",
-    "bdt-terapide-nasil-kullanilir",
-    "kariyer-danismanligi-nedir",
-];
+// Removed static allPostsKeys definitions to derive them dynamically from blog-data
+
 
 export default async function BlogPostPage({
     params,
@@ -24,9 +16,26 @@ export default async function BlogPostPage({
     
     // Choose dataset depending on locale
     const blogPosts = locale === "de" ? blogPostsDe : blogPostsTr;
+    const allPostsKeys = Object.keys(blogPosts);
     const post = blogPosts[slug as keyof typeof blogPosts];
 
     if (!post) {
+        // If not found in current locale, check if it's a slug from the other locale
+        const otherBlogPosts = locale === "de" ? blogPostsTr : blogPostsDe;
+        const otherPostKey = Object.keys(otherBlogPosts).find(key => key === slug);
+        
+        if (otherPostKey) {
+            // Find the index in the other locale and redirect to the corresponding post in current locale
+            const otherKeys = Object.keys(otherBlogPosts);
+            const index = otherKeys.indexOf(otherPostKey);
+            if (index !== -1) {
+                const targetSlug = allPostsKeys[index];
+                if (targetSlug) {
+                    const { redirect } = await import('@/i18n/routing');
+                    redirect({ href: `/blog/${targetSlug}`, locale } as any);
+                }
+            }
+        }
         notFound();
     }
 
@@ -78,7 +87,7 @@ export default async function BlogPostPage({
                                     <span>{post.comments}</span>
                                 </div>
                             </div>
-                            <h1 className="text-4xl sm:text-5xl font-serif font-bold text-primary-text leading-tight">
+                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-primary-text leading-tight">
                                 {post.title}
                             </h1>
                         </div>
@@ -88,7 +97,7 @@ export default async function BlogPostPage({
                             {post.content.map((item, index) => {
                                 if (item.type === "paragraph") {
                                     return (
-                                        <p key={index} className="text-base leading-7">
+                                        <p key={index} className="text-sm sm:text-base leading-7">
                                             {item.text}
                                         </p>
                                     );
@@ -97,7 +106,7 @@ export default async function BlogPostPage({
                                     return (
                                         <h2
                                             key={index}
-                                            className="text-2xl sm:text-3xl font-serif font-bold text-primary-text mt-8 mb-4"
+                                            className="text-xl sm:text-2xl font-serif font-bold text-primary-text mt-8 mb-4"
                                         >
                                             {item.text}
                                         </h2>
@@ -107,7 +116,7 @@ export default async function BlogPostPage({
                                     return (
                                         <ul
                                             key={index}
-                                            className="list-disc pl-6 space-y-2 text-base leading-7"
+                                            className="list-disc pl-6 space-y-2 text-sm sm:text-base leading-7"
                                         >
                                             {item.items.map((listItem: string, listIndex: number) => (
                                                 <li key={listIndex}>{listItem}</li>
@@ -126,8 +135,8 @@ export default async function BlogPostPage({
                                     href={`/blog/${previousPostSlug}` as any}
                                     className="group flex items-center gap-2 text-accent hover:text-primary transition-colors"
                                 >
-                                    <span className="text-sm font-semibold">← {t("previous")}</span>
-                                    <span className="text-sm font-semibold group-hover:underline">
+                                    <span className="text-xs sm:text-sm font-semibold">← {t("previous")}</span>
+                                    <span className="text-xs sm:text-sm font-semibold group-hover:underline line-clamp-1">
                                         {t(`posts.${previousPostSlug}` as any)}
                                     </span>
                                 </Link>
@@ -136,7 +145,7 @@ export default async function BlogPostPage({
                     </article>
 
                     {/* Sidebar */}
-                    <aside className="lg:col-span-1 pt-10">
+                    <aside className="lg:col-span-1 mt-12 lg:mt-0">
                         <div className="bg-white border border-gray-200 rounded-lg p-6 sticky top-24">
                             <h3 className="text-xl font-serif font-bold text-accent mb-6">
                                 {t("all_posts")}

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="grid  md:grid-cols-3   gap-12 mb-12">
                     <div className="text-left">
-                        <img src="/logo.png" alt="NA Psikolojik Danışmanlık ve Eğitim" className=' w-40 h-auto' />
+                        <img src="/logo.png" alt="NA Psikolojik Danışmanlık ve Eğitim" className='h-16 w-auto' />
                     </div>
                     <div className="text-left">
                         <h4 className="text-lg font-semibold text-primary-text mb-4">{t("contact_title")}</h4>

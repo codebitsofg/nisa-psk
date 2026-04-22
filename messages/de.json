@@ -76,14 +76,14 @@
   "blog": {
     "title": "Blog",
     "posts": {
-      "psikolojik-danisma-nedir": "Was ist psychologische Beratung?",
-      "psikolojik-danismanin-yararlari": "Was sind die Vorteile der psychologischen Beratung?",
-      "psikolojik-danisma-kimlere-yoneliktir": "An wen richtet sich die psychologische Beratung?",
-      "psikoegitim-nedir": "Was ist Psychoedukation?",
-      "psikoegitim-yas-gruplari": "Für welche Altersgruppen ist Psychoedukation geeignet?",
-      "bdt-nedir": "Was ist Kognitive Verhaltenstherapie (KVT)?",
-      "bdt-terapide-nasil-kullanilir": "Wie wird die KVT in der Therapie eingesetzt?",
-      "kariyer-danismanligi-nedir": "Was ist Karriereberatung?"
+      "was-ist-psychologische-beratung": "Was ist psychologische Beratung?",
+      "was-sind-die-vorteile-der-psychologischen-beratung": "Was sind die Vorteile der psychologischen Beratung?",
+      "an-wen-richtet-sich-die-psychologische-beratung": "An wen richtet sich die psychologische Beratung?",
+      "was-ist-psychoedukation": "Was ist Psychoedukation?",
+      "fuer-welche-altersgruppen-ist-psychoedukation-geeignet": "Für welche Altersgruppen ist Psychoedukation geeignet?",
+      "was-ist-kognitive-verhaltenstherapie": "Was ist Kognitive Verhaltenstherapie (KVT)?",
+      "wie-wird-die-kvt-in-der-therapie-eingesetzt": "Wie wird die KVT in der Therapie eingesetzt?",
+      "was-ist-karriereberatung": "Was ist Karriereberatung?"
     },
     "previous": "Vorheriger Beitrag",
     "all_posts": "Alle Artikel"
