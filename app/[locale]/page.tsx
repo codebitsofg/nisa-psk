@@ -304,8 +304,8 @@ export default function Home() {
             ].map(({ id }) => {
               const card = (
                 <div className="flex h-full flex-col justify-between border-r border-b border-[#e6e9ef] bg-white px-6 py-10 transition duration-200 group-hover:bg-secondary/5 ">
-                  <h3 className="text-2xl font-bold text-primary-text leading-tight">
-                    {t(`services.items.${id}`)}
+                  <h3 className="text-2xl font-bold text-primary-text leading-tight break-words hyphens-auto">
+                    {t(`services.items.${id}` as any)}
                   </h3>
                   <span className="mt-10 text-md font-semibold text-primary group-hover:text-accent">
                     {t("services.details")}
@@ -329,8 +329,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section id="randevu" className="py-8 mt-12 px-4  mb-16 sm:px-6 lg:px-8 bg-accent">
+
+      {/* <section id="randevu" className="py-8 mt-12 px-4  mb-16 sm:px-6 lg:px-8 bg-accent">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="space-y-4">
@@ -380,7 +380,7 @@ export default function Home() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       <BlogPosts />
