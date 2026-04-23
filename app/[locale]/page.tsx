@@ -93,7 +93,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="relative min-h-screen pt-20">
+      <section id="about" className="relative min-h-screen pt-20">
         <div className="absolute inset-0 bg-[url('/bg-test.jpeg')] bg-cover bg-center bg-no-repeat">
           <div className="absolute inset-0 bg-gradient-to-r from-accent/90 via-accent/60 to-transparent"></div>
         </div>
@@ -264,7 +264,7 @@ export default function Home() {
 
             <div className="mt-8">
               <a
-                href="#randevu"
+                href="#about"
                 className="inline-block w-full sm:w-auto bg-accent text-white px-10 py-3 rounded-lg hover:bg-primary transition-colors font-semibold text-lg text-center"
               >
                 {t("about.button")}

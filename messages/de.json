@@ -4,7 +4,8 @@
     "services": "Leistungen",
     "blog": "Blog",
     "contact": "Kontakt",
-    "appointment": "Termin vereinbaren"
+    "appointment": "Termin vereinbaren",
+    "language": "Sprache"
   },
   "hero": {
     "title_1": "Willkommen zu deiner",
@@ -98,7 +99,8 @@
     "days": "Montag - Samstag",
     "time": "10:00 - 22:00 Uhr",
     "rights": "© {year} NA Psychologische Beratung und Bildung. Alle Rechte vorbehalten.",
-    "author": "Nisanur Azer - Psychologische Beraterin / Kognitive Verhaltenstherapeutin"
+    "author": "Nisanur Azer - Psychologische Beraterin / Kognitive Verhaltenstherapeutin",
+    "kvkk": "Datenschutzerklärung"
   },
   "kvkk_modal": {
     "title": "Datenschutzerklärung",
@@ -131,5 +133,31 @@
     "title_required": "Zustimmung erforderlich",
     "title_received": "Anfrage erhalten",
     "title_error": "Ein Problem ist aufgetreten"
+  },
+  "kvkk_page": {
+    "title": "Schutz personenbezogener Daten und Cookie-Richtlinie",
+    "subtitle": "Website Cookie-Richtlinie",
+    "intro": "Als NA Psychologische Beratung und Bildung (\"Unternehmen\" oder \"NA Psychologische Beratung und Bildung\") hat die Gewährleistung der Sicherheit Ihrer personenbezogenen Daten und der Schutz Ihrer Privatsphäre für uns Priorität. Diese Cookie-Richtlinie erklärt den Nutzern, die unsere Website unter https://napsikolojik.com/ besuchen, welche Arten von Cookies unter welchen Bedingungen verwendet werden und wie Ihre personenbezogenen Daten erhoben, verwendet und geschützt werden.\n\nCookies sind kleine Datendateien, die von Websites auf Ihrem Gerät gespeichert werden, um das Nutzererlebnis zu verbessern und die Funktionalität zu erhöhen. Wenn Sie die Verwendung von Cookies nicht akzeptieren, können Sie Cookies in Ihren Browsereinstellungen löschen oder blockieren. In diesem Fall funktionieren jedoch einige Funktionen unserer Website möglicherweise nicht wie erwartet.",
+    "section1_title": "Erhebung personenbezogener Daten",
+    "section1_content": "Wenn Sie unsere Website besuchen, das Kontaktformular ausfüllen oder unsere Bildungs- und Beratungsdienste in Anspruch nehmen, können wir personenbezogene Daten wie Ihren Namen, Ihre E-Mail-Adresse und Ihre Telefonnummer erheben. Diese Informationen werden nur von Ihnen erhoben und zum Zweck der Erbringung von Dienstleistungen verwendet; sie werden ohne Ihre Erlaubnis nicht an Dritte weitergegeben.",
+    "section2_title": "Cookies und Nutzungsdaten",
+    "section2_content": "Wenn Sie unsere Website besuchen, werden Cookies verwendet, um Ihr Nutzererlebnis zu verbessern, die Website-Effizienz zu steigern und personalisierte Inhalte anzubieten. Anonyme Daten über die Website-Nutzung (Besuchshäufigkeit, Bewegungen auf der Website, Interessen usw.) können erhoben werden, um die Leistung zu bewerten, anonyme Statistiken zu erstellen und das Erlebnis zu verbessern.",
+    "section3_title": "Welche Daten werden in Cookies verarbeitet?",
+    "section3_content": "Cookies erheben Daten über Ihre Browsing-Präferenzen auf dem Gerät, mit dem Sie die Website besuchen. Diese Daten können Informationen wie die von Ihnen besuchten Seiten, Inhalte, an denen Sie interessiert sind, und Ihre bevorzugte Sprache enthalten.",
+    "section4_title": "Cookie-Arten",
+    "section4_content": "Auf unserer Website werden folgende Arten von Cookies verwendet:\n\n• Sitzungs-Cookies: Werden vorübergehend verwendet, um das ordnungsgemäße Funktionieren der Website zu gewährleisten, und werden automatisch gelöscht, wenn Sie Ihren Browser schließen.\n• Permanente Cookies: Werden verwendet, um Ihre Präferenzen bei nachfolgenden Besuchen zu speichern, und verbleiben auf Ihrem Gerät, auch wenn der Browser geschlossen wird.\n• Notwendige/Technische Cookies: Diese sind für die Grundfunktionen der Website erforderlich.\n• Analyse-Cookies: Analysieren die Nutzung der Website und sammeln Daten, um die Website effizienter zu gestalten. Diese identifizieren keine Besucher.\n• Funktionale Cookies: Verbessern das Nutzererlebnis, indem sie sich an Ihre Auswahl erinnern.\n• Werbe-Cookies: Werden verwendet, um personalisierte Werbung basierend auf den Interessen der Nutzer anzuzeigen.",
+    "section5_title": "Wie werden Cookie-Präferenzen verwaltet?",
+    "section5_content": "Sie können Ihre Cookie-Präferenzen über Ihre Browsereinstellungen ändern, blockieren oder löschen. Sie können dazu die Links zu den Cookie-Einstellungen in Browsern wie Google Chrome, Internet Explorer, Mozilla Firefox, Opera, Safari und Microsoft Edge verwenden.",
+    "section6_title": "Verwendung von Informationen",
+    "section6_content": "Die erhobenen personenbezogenen Daten können für folgende Zwecke verwendet werden:\n\n• Bereitstellung und Verbesserung unserer Dienstleistungen.\n• Erbringung von Kundenservice und Verbesserung des Nutzererlebnisses.\n• Zusendung von Informationen über unsere Dienstleistungen, Aktualisierungen, Werbeaktionen und Veranstaltungen.\n• Durchführung von Marktforschung und demografischen Analysen.\n• Erfüllung gesetzlicher Verpflichtungen.",
+    "section7_title": "Informationen aus Drittquellen",
+    "section7_content": "In einigen Fällen können Nutzerinformationen auch von Drittquellen wie Social-Media-Plattformen und Geschäftspartnern erhoben werden. Diese Informationen dienen dazu, unsere vorhandenen Nutzerdaten zu ergänzen und unser Serviceangebot zu verbessern.",
+    "section8_title": "Pflichten des Nutzers",
+    "section8_content": "Sie erklären sich damit einverstanden, bei der Nutzung unserer Website keine illegalen, schädlichen, bedrohlichen oder obszönen Inhalte zu teilen und keine Aktivitäten durchzuführen, die das Funktionieren der Website beeinträchtigen könnten.",
+    "section9_title": "Erklärung zur Barrierefreiheit",
+    "section9_content": "Als NA Psychologische Beratung und Bildung arbeiten wir ständig daran, sicherzustellen, dass unsere Website zugänglich und benutzerfreundlich ist.",
+    "section10_title": "Geistige Eigentumsrechte",
+    "section10_content": "Alle Inhalte, Grafiken, Bilder und sonstigen Materialien auf unserer Website sind geistiges Eigentum von NA Psychologische Beratung und Bildung. Diese Inhalte dürfen nur in der zulässigen Weise verwendet werden; unbefugte Nutzung kann rechtliche Schritte nach sich ziehen.",
+    "last_update": "Zuletzt aktualisiert: April 2026"
   }
 }

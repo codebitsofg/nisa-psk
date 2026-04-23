@@ -1,6 +1,6 @@
 "use client";
 
-import {Link} from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import {
     Carousel,
     CarouselContent,
@@ -8,7 +8,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import {useTranslations, useLocale} from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 const postsTr = [
     {
@@ -110,9 +110,9 @@ const BlogPosts = () => {
     const posts = locale === "de" ? postsDe : postsTr;
 
     return (
-        <section id="blog" className="py-18 px-4 sm:px-6 lg:px-8 ">
+        <section id="blog" className="pb-6 pt-16 px-4 sm:px-6 lg:px-8 bg-accent">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-5xl text-center font-serif font-bold text-primary-text ">
+                <h2 className="text-3xl sm:text-5xl text-center font-serif font-bold text-accent-foreground ">
                     {t("title")}
                 </h2>
                 <Carousel
@@ -120,7 +120,7 @@ const BlogPosts = () => {
                         align: "start",
                         loop: true,
                     }}
-                    className="w-full p-14"
+                    className="w-full py-12 px-0 sm:p-14"
                 >
                     <CarouselContent className="-ml-4 items-stretch">
                         {posts.map((post) => (

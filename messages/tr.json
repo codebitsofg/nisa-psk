@@ -4,7 +4,8 @@
     "services": "Hizmetlerimiz",
     "blog": "Blog",
     "contact": "İletişim",
-    "appointment": "Randevu Al"
+    "appointment": "Randevu Al",
+    "language": "Dil"
   },
   "hero": {
     "title_1": "Kendi İçsel Yolculuğuna",
@@ -62,7 +63,7 @@
       "anxiety_disorders": "Kaygı Bozuklukları",
       "relationship_issues": "İlişki Problemleri",
       "depression": "Depresyon",
-      "self_esteem": "Özsaygı ve Özgüven Geliştirme",
+      "self_esteem": "Öz Saygı ve Öz Güven Geliştirme",
       "parenting": "Ebeveyn / Aile Danışmanlığı",
       "trauma": "Travma Sonrası İyileşme"
     },
@@ -98,7 +99,8 @@
     "days": "Pazartesi - Cumartesi",
     "time": "10:00 - 22:00",
     "rights": "© {year} NA Psikolojik Danışmanlık ve Eğitim. Tüm hakları saklıdır.",
-    "author": "Nisanur Azer - Psikolojik Danışman / Bilişsel Davranışçı Terapist"
+    "author": "Nisanur Azer - Psikolojik Danışman / Bilişsel Davranışçı Terapist",
+    "kvkk": "KVKK Aydınlatma Metni"
   },
   "kvkk_modal": {
     "title": "KVKK Aydınlatma Metni",
@@ -131,5 +133,31 @@
     "title_required": "Onay Gerekli",
     "title_received": "Talebiniz Alındı",
     "title_error": "Bir Sorun Oluştu"
+  },
+  "kvkk_page": {
+    "title": "Kişisel Verilerin Korunması ve Çerez Politikası",
+    "subtitle": "İnternet Sitesi Çerez Politikası",
+    "intro": "NA Psikolojik Danışmanlık ve Eğitim (\"Şirket\" veya \"NA Psikolojik Danışmanlık ve Eğitim\") olarak, kişisel verilerinizin güvenliğini sağlamak ve gizliliğinizi korumak önceliklerimizdendir. Bu Çerez Politikası, https://napsikolojik.com/ adresindeki web sitemizi ziyaret eden kullanıcılarımız için hangi tür çerezlerin hangi koşullarda kullanıldığını ve kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.\n\nÇerezler, internet siteleri tarafından kullanıcı deneyimini iyileştirmek ve işlevselliği artırmak amacıyla cihazınıza depolanan küçük veri dosyalarıdır. Çerez kullanımını kabul etmiyorsanız, tarayıcı ayarlarınızdan çerezleri silebilir veya engelleyebilirsiniz. Ancak bu durumda web sitemizin bazı fonksiyonları beklediğiniz gibi çalışmayabilir. Tarayıcınızdan çerez ayarlarınızı değiştirmediğiniz sürece, bu siteyi kullanarak çerez kullanımını kabul etmiş sayılacaksınız.",
+    "section1_title": "Kişisel Verilerin Toplanması",
+    "section1_content": "Web sitemizi ziyaret ettiğinizde, iletişim formunu doldurduğunuzda ya da eğitim ve danışmanlık hizmetlerimizden faydalandığınızda adınız, e-posta adresiniz ve telefon numaranız gibi kişisel bilgilerinizi toplayabiliriz. Bu bilgiler yalnızca sizden alınır ve size hizmet sunmak amacıyla kullanılır; verdiğiniz iznin dışında üçüncü kişilerle paylaşılmaz.",
+    "section2_title": "Çerezler ve Kullanım Verileri",
+    "section2_content": "Web sitemizi ziyaret ettiğinizde çerezler, kullanıcı deneyiminizi geliştirmek, site verimliliğini artırmak ve kişiselleştirilmiş içerikler sunmak amacıyla kullanılır. Site kullanımıyla ilgili anonim veriler (ziyaret sıklığı, site üzerindeki hareketler, ilgi alanları vb.) toplanabilir ve bu veriler performansı değerlendirmek, anonim istatistikler oluşturmak ve deneyimi iyileştirmek için kullanılır.",
+    "section3_title": "Çerezlerde Hangi Veriler İşlenir?",
+    "section3_content": "Çerezler, siteyi ziyaret ettiğiniz cihazdaki tarama tercihlerinize dair veriler toplar. Bu veriler, ziyaret ettiğiniz sayfalar, ilginizi çeken içerikler ve tercih ettiğiniz dil gibi bilgileri içerebilir.",
+    "section4_title": "Çerez Türleri",
+    "section4_content": "Web sitemizde aşağıdaki çerez türleri kullanılmaktadır:\n\n• Oturum Çerezleri: Web sitesinin düzgün çalışmasını sağlamak amacıyla geçici olarak kullanılır ve tarayıcınızı kapattığınızda otomatik olarak silinir.\n• Kalıcı Çerezler: Tercihlerinizi hatırlayarak sonraki ziyaretlerde deneyiminizi kişiselleştirmek için kullanılır ve tarayıcıyı kapattığınızda dahi cihazınızda saklanır.\n• Zorunlu/Teknik Çerezler: Web sitesinin temel işlevlerini yerine getirebilmesi için gerekli olan çerezlerdir.\n• Analitik Çerezler: Web sitesinin kullanımını analiz eder ve siteyi daha verimli hale getirmek amacıyla veri toplar. Bu çerezler ziyaretçi kimliklerini tanımlamaz.\n• İşlevsel/Fonksiyonel Çerezler: Site içindeki seçimlerinizi hatırlayarak daha iyi bir kullanıcı deneyimi sunar.\n• Hedefleme/Reklam Çerezleri: Kullanıcılara ilgi alanlarına göre kişiselleştirilmiş reklamlar sunmak amacıyla kullanılır.",
+    "section5_title": "Çerez Tercihleri Nasıl Yönetilir?",
+    "section5_content": "Çerez tercihlerinizi tarayıcınızın ayarları üzerinden değiştirebilir, çerezleri engelleyebilir veya silebilirsiniz. Tarayıcınızda çerez ayarlarınızı değiştirebilmek için Google Chrome, Internet Explorer, Mozilla Firefox, Opera, Safari ve Microsoft Edge gibi tarayıcıların sunduğu Çerez Ayarları bağlantılarını kullanabilirsiniz.",
+    "section6_title": "Bilgi Kullanımı",
+    "section6_content": "Toplanan kişisel bilgiler, aşağıdaki amaçlarla kullanılabilir:\n\n• Hizmetlerimizi sağlamak ve geliştirmek.\n• Müşteri hizmetleri sunmak ve kullanıcı deneyimini iyileştirmek.\n• Size hizmetlerimizle ilgili bilgiler, güncellemeler, promosyonlar ve etkinlikler hakkında bilgi vermek.\n• Pazar araştırması yapmak ve demografik analizler gerçekleştirmek.\n• Yasal yükümlülükleri yerine getirmek.",
+    "section7_title": "Üçüncü Taraf Kaynaklardan Toplanan Bilgiler",
+    "section7_content": "Bazı durumlarda sosyal medya platformları ve iş ortakları gibi üçüncü taraf kaynaklardan da kullanıcı bilgileri toplanabilir. Bu bilgiler, mevcut kullanıcı verilerimizi tamamlamak ve hizmet sunumumuzu iyileştirmek amacıyla kullanılmaktadır.",
+    "section8_title": "Kullanıcı Yükümlülükleri",
+    "section8_content": "Web sitemizi kullanırken yasa dışı, zararlı, tehdit edici ya da müstehcen içerikler paylaşmamanız ve sitenin işleyişine zarar verecek faaliyetlerde bulunmamanız gerektiğini kabul edersiniz.",
+    "section9_title": "Erişilebilirlik Beyanı",
+    "section9_content": "NA Psikolojik Danışmanlık ve Eğitim olarak web sitemizin erişilebilir ve kullanıcı dostu olmasını sağlamak için sürekli çalışıyoruz.",
+    "section10_title": "Fikri Mülkiyet Hakları",
+    "section10_content": "Web sitemizde yer alan tüm içeriklerin, grafiklerin, görsellerin ve diğer materyallerin fikri mülkiyet hakları NA Psikolojik Danışmanlık ve Eğitim'e aittir. Bu içerikler yalnızca izin verilen şekillerde kullanılabilir; izinsiz kullanımlar yasal işlem gerektirebilir.",
+    "last_update": "Son güncelleme: Nisan 2026"
   }
 }
